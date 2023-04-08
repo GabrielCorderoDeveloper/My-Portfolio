@@ -1,0 +1,22 @@
+//Import the functions and variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+// My custom variables
+$custom-theme-colors: (
+    "clearWhite": #FFFFFF,
+
+    "lightGray": #DADADA,
+    "darkGray": #7A7A7A,
+    "lightBlack": #282828,
+
+    "darkBlue": #1E2B32,
+
+    "mainColor": #72DF1D,
+    "secondaryColor": #CFECA0
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors );
+
+//Importing bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
