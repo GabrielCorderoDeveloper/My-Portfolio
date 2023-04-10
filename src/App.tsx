@@ -1,5 +1,6 @@
 import './App.css'
 import BigRectangle from './components/BigRectangle'
+import MainText from './components/MainText'
 import NavBar from './components/NavBar'
 
 function App() {
@@ -7,7 +8,13 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <BigRectangle/>
+
+      {/* Upper section */}
+      <section>
+        <BigRectangle/>
+        <MainText/>
+      </section>
+
     </div>
   )
 }

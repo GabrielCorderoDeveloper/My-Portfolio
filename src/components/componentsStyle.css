@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
 }
 html {
     font-size: 62.5%; /*1? Each rem is equal to 10px*/
@@ -28,14 +29,15 @@ html {
 /*^ NavBar component */
 .nav-bar {
     font-size: 1.6rem; /* 16px */
-    font-family: 'League Spartan', sans-serif;
-    margin: 32px 60px;
+    margin: 10px 105px 20px 105px;
 }
 
 .nav-circle {
     margin-right: 30px;
-    padding: 2px 8px 0px 8px;
+    padding: 7px 22px 6px 22px;
     border-radius: 20px;
+
+    font-size: 1.8rem; /* 18px */
 }
 
 .nav-item-top {
@@ -85,4 +87,31 @@ html {
         right: -60px;
         z-index: -1;
     }
+  }
+
+  /*^ MainText component*/
+  .main-container {
+    margin-left: 130px;
+  }
+  .title {
+    margin-top: 92px;
+    font-size: 5.2rem; /* 52px */
+    line-height: 105.5%;
+  }
+
+  .paragraph {
+    font-size: 2rem; /* 20px */
+    line-height: 105.5%;
+  }
+
+  .roboto { font-family: 'Roboto Serif', serif; }
+
+  .button {
+    margin-top: 20px;
+    font-size: 1.6rem; /* 16px */
+    font-weight: bold;
+
+    padding: 6px 30px 6px 30px;
+    border-radius: 20px;
+    border: none;
   }
