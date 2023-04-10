@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62.5%; /*1? Each rem is equal to 10px*/
@@ -28,14 +29,60 @@ html {
 .nav-bar {
     font-size: 1.6rem; /* 16px */
     font-family: 'League Spartan', sans-serif;
-    
-
+    margin: 32px 60px;
 }
 
 .nav-circle {
-    padding: 6px 8px;
+    margin-right: 30px;
+    padding: 2px 8px 0px 8px;
     border-radius: 20px;
 }
 
+.nav-item-top {
+    margin-right: 30px;
+    padding: 2px 8px 0px 8px;
+    border-radius: 20px 20px 0px 0px;
+}
+.nav-item {
+    margin-right: 30px;
+    padding: 2px 8px 0px 8px;
+}
+.nav-item-bottom {
+    margin-right: 30px;
+    padding: 2px 8px 0px 8px;
+    border-radius: 0px 0px 20px 20px;
+}
 
 
+/*^ BigRectangle component */
+.big-rectangle {
+    width: 360px;
+    height: 800px;
+    background: linear-gradient(#72DF1D, #F3FFA9);
+    border-radius: 240px;
+    transform: rotate(35deg);
+    position: absolute;
+    top: -20%;
+    right: 0%;
+    z-index: -1;
+}
+
+.big-rectangle img {
+    position: absolute;
+    bottom: 0;
+}
+
+/*~ Phone variant*/
+@media (max-width: 600px) {
+    .big-rectangle {
+        width: 260px;
+        height: 800px;
+        background: linear-gradient(#72DF1D, #F3FFA9);
+        border-radius: 240px;
+        transform: rotate(35deg);
+        position: absolute;
+        top: -220px;
+        right: -60px;
+        z-index: -1;
+    }
+  }
