@@ -12,8 +12,8 @@ html {
     font-size: 62.5%; /*1? Each rem is equal to 10px*/
 }
 
-/* // Custom colors */ /*The colors are impremented on bootstrap*/
-/* :root {
+/*1? Custom colors */ /*The colors are also impremented on bootstrap*/
+:root {
     --clear-white: #FFFFFF;
 
     --light-gray: #DADADA;
@@ -24,20 +24,26 @@ html {
 
     --main-color: #72DF1D;
     --secondary-color: #CFECA0;
-} */
+}
 
 /*^ NavBar component */
 .nav-bar {
-    font-size: 1.6rem; /* 16px */
+    font-size: 1.8rem; /* 18px */
     margin: 10px 105px 20px 105px;
 }
 
 .nav-circle {
-    margin-right: 30px;
+    margin-right: 36px;
     padding: 7px 22px 6px 22px;
     border-radius: 20px;
 
     font-size: 1.8rem; /* 18px */
+    transition: 0.5s;
+}
+.nav-circle:hover {
+    margin-right: 30px;
+    padding: 7px 28px 6px 28px;
+    border-radius: 10px;
 }
 
 .nav-item-top {
@@ -54,6 +60,13 @@ html {
     padding: 2px 8px 0px 8px;
     border-radius: 0px 0px 20px 20px;
 }
+
+.nav-bar .text-darkGray:hover, .nav-bar .text-lightBlack:hover  {
+    color: var(--main-color) !important;
+    text-decoration: underline;
+    -webkit-text-stroke: 0.5px var(--main-color);
+  }
+  
 
 
 /*^ BigRectangle component */
@@ -85,12 +98,24 @@ html {
 
   .button {
     margin-top: 20px;
-    font-size: 1.6rem; /* 16px */
+    margin-left: 6px;
+    font-size: 1.8rem; /* 18px */
     font-weight: bold;
 
-    padding: 6px 30px 6px 30px;
+    padding: 8px 30px 6px 30px;
     border-radius: 20px;
-    border: none;
+    border: transparent;
+    transition: 0.5s ;
+  }
+  .button:hover {
+    margin-left: 0;
+    font-size: 1.8rem; /* 16px */
+
+    padding: 8px 36px 6px 36px;
+    border-radius: 15px;
+    background-color: var(--secondary-color) !important;
+    color: var(--light-black) !important;
+    text-decoration: underline;
   }
 
   .white-transparent-bg {
@@ -127,9 +152,20 @@ html {
     display: flex;
     justify-content: center;
   }
+
   .social a {
     padding: 10px;
   }
+
+  .social a svg {
+    transition: 0.3s;
+  }
+
+  .social a:hover svg {
+    color: var(--main-color) !important;
+    transform: rotate(10deg);
+  }
+  
   .social-bg {
     background-color: #282828;
     border-radius: 20px;
