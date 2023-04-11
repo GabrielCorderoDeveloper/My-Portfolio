@@ -69,9 +69,9 @@ html {
   /*^ MainText component*/
   .main-container {
     margin-left: 130px;
+    margin-top: 92px;
   }
   .title {
-    margin-top: 92px;
     font-size: 5.2rem; /* 52px */
     line-height: 105.5%;
   }
@@ -91,6 +91,14 @@ html {
     padding: 6px 30px 6px 30px;
     border-radius: 20px;
     border: none;
+  }
+
+  .white-transparent-bg {
+    border-radius: 15px;
+    padding: 0px 10px;
+    width: fit-content;
+
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   /*^ Tags*/
