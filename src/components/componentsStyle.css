@@ -110,6 +110,7 @@ html {
   .tag {
     min-width: 100px;
     text-align: center;
+    letter-spacing: 2.5px;
     padding: 6px 20px 4px 20px;
     border-radius: 6px;
     margin-right: 10px;
@@ -117,6 +118,20 @@ html {
 
     font-size: 1.8rem; /* 18px */
     font-weight: bolder;
+  }
+
+  /*^ Social media*/
+  .social {
+    width: 620px;
+    display: flex;
+    justify-content: center;
+  }
+  .social a {
+    padding: 10px;
+  }
+  .social-bg {
+    background-color: #282828;
+    border-radius: 20px;
   }
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/
