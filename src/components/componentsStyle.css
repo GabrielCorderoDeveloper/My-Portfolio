@@ -57,37 +57,14 @@ html {
 
 
 /*^ BigRectangle component */
-.big-rectangle {
-    width: 360px;
-    height: 800px;
-    background: linear-gradient(#72DF1D, #F3FFA9);
-    border-radius: 240px;
-    transform: rotate(35deg);
-    position: absolute;
-    top: -20%;
-    right: 0%;
-    z-index: -1;
-}
 
 .big-rectangle img {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 65%;
 }
-
-/*~ Phone variant*/
-@media (max-width: 600px) {
-    .big-rectangle {
-        width: 260px;
-        height: 800px;
-        background: linear-gradient(#72DF1D, #F3FFA9);
-        border-radius: 240px;
-        transform: rotate(35deg);
-        position: absolute;
-        top: -220px;
-        right: -60px;
-        z-index: -1;
-    }
-  }
 
   /*^ MainText component*/
   .main-container {
@@ -115,3 +92,45 @@ html {
     border-radius: 20px;
     border: none;
   }
+
+/*~ Tablet variant <-----------------------------------------------------------------------*/
+@media (max-width: 820px) {
+    /*^ MainText component*/
+    .main-container {
+        margin-left: 45px;
+        }
+
+        /*^ NavBar component */
+    .nav-bar {
+        font-size: 1.6rem; /* 16px */
+        margin: 30px 80px 0px 30px;
+    }
+
+        /*^ BigRectangle component */
+
+    .big-rectangle img {
+        width: 105%;
+        top: -10px;
+        right: -20px;
+    }
+}
+
+  /*~ Phone variant <-----------------------------------------------------------------------*/
+@media (max-width: 600px) {
+        /*^ MainText component*/
+    .main-container {
+        margin-left: 30px;
+      }
+
+        /*^ NavBar component */
+    .nav-bar {
+        font-size: 1.6rem; /* 16px */
+        margin: 10px 0px 390px 30px;
+    }
+
+        /*^ BigRectangle component */
+
+    .big-rectangle img {
+        width: 145%;
+    }
+}
