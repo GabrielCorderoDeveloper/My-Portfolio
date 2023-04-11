@@ -93,12 +93,30 @@ html {
     border: none;
   }
 
+  /*^ Tags*/
+  .tag-container {
+    margin-left: 130px;
+    margin-top: 130px;
+  }
+
+  .tag {
+    min-width: 100px;
+    text-align: center;
+    padding: 6px 20px 4px 20px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-size: 1.8rem; /* 18px */
+    font-weight: bolder;
+  }
+
 /*~ Tablet variant <-----------------------------------------------------------------------*/
 @media (max-width: 820px) {
     /*^ MainText component*/
     .main-container {
         margin-left: 45px;
-        }
+    }
 
         /*^ NavBar component */
     .nav-bar {
@@ -109,9 +127,14 @@ html {
         /*^ BigRectangle component */
 
     .big-rectangle img {
-        width: 105%;
+        width: 100%;
         top: -10px;
         right: -20px;
+    }
+
+        /*^ Tags*/
+    .tag-container {
+        margin-left: 45px;
     }
 }
 
@@ -121,6 +144,9 @@ html {
     .main-container {
         margin-left: 30px;
       }
+      .title {
+        margin-top: 10px;
+    }
 
         /*^ NavBar component */
     .nav-bar {
@@ -129,8 +155,14 @@ html {
     }
 
         /*^ BigRectangle component */
-
     .big-rectangle img {
-        width: 145%;
+        width: 155%;
+    }
+
+        /*^ Tags*/
+
+    .tag-container {
+        margin-left: 30px;
+        margin-top: 60px;
     }
 }
