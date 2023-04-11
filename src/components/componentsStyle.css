@@ -61,7 +61,7 @@ html {
     border-radius: 0px 0px 20px 20px;
 }
 
-.nav-bar .text-darkGray:hover, .nav-bar .text-lightBlack:hover  {
+.nav-bar a:hover {
     color: var(--main-color) !important;
     text-decoration: underline;
     -webkit-text-stroke: 0.5px var(--main-color);
@@ -214,6 +214,14 @@ html {
 
   footer .row-text{
     margin: 50px auto;
+  }
+
+  footer a:hover {
+    color: var(--main-color) !important;
+    text-decoration: underline;
+    -webkit-text-stroke: 0.5px var(--main-color);
+    text-shadow: 2px 0 3px var(--dark-blue);
+    transition: 0.3s;
   }
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/

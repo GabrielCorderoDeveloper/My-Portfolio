@@ -6,9 +6,9 @@ const Footer = () => {
         {/*//1? Upper footer */}
         <div className="d-flex justify-content-between flex-wrap footer-father">
             <div className="row col-md-4 row-spacing row-links">
-                <a className="text-darkBlue" href="">Contact</a>
-                <a className="text-darkBlue" href="">About me</a>
-                <a className="text-darkBlue" href="">Portfolio</a>
+                <a className="text-darkBlue" href="#">Contact</a>
+                <a className="text-darkBlue" href="#">About me</a>
+                <a className="text-darkBlue" href="#">Portfolio</a>
             </div>
 
             <p className="col-md-4 row-spacing text-darkGray">
@@ -23,7 +23,7 @@ const Footer = () => {
 
             <div className="col-md-4 row-spacing row-text">
                 <p className="text-darkGray">To know more how this project was build step and how I create projects </p>
-                <a className="text-darkBlue" href="">Click here</a>
+                <a className="text-darkBlue" href="#">Click here</a>
             </div>
         </div>
 
