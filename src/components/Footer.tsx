@@ -31,9 +31,9 @@ const Footer = () => {
         <hr/>
         
         <div className="d-flex align-content-center flex-wrap down-spacing">
-            <p className="col-6">©Gabriel Cordero 2023</p>
+            <p className="col-md-6">©Gabriel Cordero 2023</p>
 
-            <div className="col-6">
+            <div className="col-md-6">
                 <SocialMedia color='#1E2B32' background={false}/>
             </div>
         </div>
