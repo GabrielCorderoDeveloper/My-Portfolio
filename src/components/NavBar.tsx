@@ -17,7 +17,7 @@ const NavBar = () => {
       <Navbar.Collapse>
         <Nav>
           <div className='nav-item-top bg-clearWhite'>
-            <Nav.Link className='text-darkGray ps-4 px-1' href='#'>About me</Nav.Link>
+            <Nav.Link className='text-darkGray px-1' href='#'>About me</Nav.Link>
           </div>
           <div className='nav-item bg-clearWhite'>
             <Nav.Link className='text-darkGray px-1' href='#'>Portfolio</Nav.Link>
@@ -33,26 +33,3 @@ const NavBar = () => {
 }
 
 export default NavBar
-
-
-
-    // <Nav className='d-flex justify-content-between nav-bar'>
-
-    //   <div className='d-inline-flex'>
-    //       <Nav.Item>
-    //         <Nav.Link className='text-darkGray' href='#'>About me</Nav.Link>
-    //       </Nav.Item>
-    //       <Nav.Item>
-    //         <Nav.Link className='text-darkGray' href='#'>Portfolio</Nav.Link>
-    //       </Nav.Item>
-    //       <Nav.Item>
-    //         <Nav.Link className='text-darkGray' href='#'>More</Nav.Link>
-    //       </Nav.Item>
-    //   </div>
-
-    //   <div className='nav-circle bg-clearWhite'>
-    //       <Nav.Item>
-    //         <Nav.Link className='text-lightBlack' href='#'>Contact me</Nav.Link>
-    //       </Nav.Item>
-    //   </div>
-    // </Nav>
