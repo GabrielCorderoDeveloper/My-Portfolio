@@ -14,7 +14,7 @@ const NavBar = () => {
       </Navbar.Brand>
 
       <Navbar.Toggle />
-      <Navbar.Collapse>
+      <Navbar.Collapse  className='my-fixed-navbar'>
         <Nav>
           <div className='nav-item-top bg-clearWhite'>
             <Nav.Link className='text-darkGray px-1' href='#'>About me</Nav.Link>

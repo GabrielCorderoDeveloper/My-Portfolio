@@ -52,8 +52,10 @@ html {
 .nav-item {
     margin-right: 30px;
     padding: 2px 8px 0px 8px;
+    margin-top: -1px;
 }
 .nav-item-bottom {
+    margin-top: -1px;
     margin-right: 30px;
     padding: 2px 8px 0px 8px;
     border-radius: 0px 0px 20px 20px;
@@ -67,6 +69,13 @@ html {
   font-size: 2rem; /* 20px */
 }
 
+
+.my-fixed-navbar {
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
   
 
 
@@ -238,6 +247,7 @@ html {
         margin: 30px 80px 0px 30px;
     }
 
+
         /*^ BigRectangle component */
 
     .big-rectangle img {
@@ -266,6 +276,10 @@ html {
     .nav-bar {
         font-size: 1.6rem; /* 16px */
         margin: 10px 0px 390px 30px;
+    }
+
+    .my-fixed-navbar {
+      position: absolute;
     }
 
         /*^ BigRectangle component */
