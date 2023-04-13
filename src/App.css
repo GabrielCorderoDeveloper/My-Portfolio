@@ -2,3 +2,12 @@
     margin-top: 120px;
     margin-left: 15%;
 }
+
+/*~ Phone variant <-----------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    /*^ SocialMedia component*/
+    .first-social {
+        margin-top: 120px;
+        margin-left: 10%;
+    }
+}

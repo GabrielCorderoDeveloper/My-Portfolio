@@ -29,7 +29,7 @@ const SocialMedia = ({ color, background }: Props) => {
     }
 
   return (
-    <div className={ background ? "social social-bg" : 'social'}>
+    <div className={ background ? "social big social-bg" : 'social'}>
         <a target="_blank" href={links.youtube}><AiFillYoutube style={style}/></a>
         <a target="_blank" href={links.instagram}><AiOutlineInstagram style={style}/></a>
         <a target="_blank" href={links.github}><AiFillGithub style={style}/></a>
