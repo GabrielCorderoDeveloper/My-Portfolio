@@ -1,0 +1,39 @@
+  /*^ Tags*/
+  .tag-container {
+    margin-left: 130px;
+    margin-top: 130px;
+  }
+
+  .tag {
+    min-width: 100px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    padding: 6px 20px 4px 20px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-size: 1.8rem; /* 18px */
+    font-family: 'Roboto Serif', serif;
+    font-weight: 800;
+  }
+
+/*~ Tablet variant <-----------------------------------------------------------------------*/
+@media (max-width: 820px) {
+
+        /*^ Tags*/
+    .tag-container {
+        margin-left: 45px;
+    }
+}
+
+  /*~ Phone variant <-----------------------------------------------------------------------*/
+@media (max-width: 600px) {
+
+        /*^ Tags*/
+    .tag-container {
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+}

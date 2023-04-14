@@ -1,3 +1,5 @@
+import './MainText.css';
+
 const MainText = () => {
   return (
       <div className='main-container col-lg-3 col-md-5 col-9'>

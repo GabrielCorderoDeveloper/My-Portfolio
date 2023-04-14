@@ -1,4 +1,5 @@
 import SocialMedia from "./SocialMedia"
+import './Footer.css';
 
 const Footer = () => {
   return (

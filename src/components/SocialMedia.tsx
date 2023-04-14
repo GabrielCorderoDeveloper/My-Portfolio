@@ -1,4 +1,5 @@
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube, AiOutlineInstagram } from "react-icons/ai";
+import './SocialMedia.css';
 
 interface Props {
     color: string;

@@ -1,4 +1,5 @@
 import './App.css'
+import './components/componentsStyle.css'
 import BigRectangle from './components/BigRectangle'
 import Footer from './components/Footer'
 import MainText from './components/MainText'

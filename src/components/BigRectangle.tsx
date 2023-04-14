@@ -1,3 +1,5 @@
+import './BigRectangle.css';
+
 function BigRectangle() {
   return (
     <div className="big-rectangle">

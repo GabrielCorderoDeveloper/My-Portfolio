@@ -1,3 +1,5 @@
+import './Tags.css';
+
 const Tags = () => {
   return (
     <div className="d-flex flex-wrap col-lg-4 col-md-8 tag-container">

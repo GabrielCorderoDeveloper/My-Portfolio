@@ -1,5 +1,5 @@
 import Navbar from 'react-bootstrap/esm/Navbar';
-import './componentsStyle.css'
+import './NavBar.css'
 import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
