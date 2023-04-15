@@ -6,6 +6,7 @@ import MainText from './components/MainText'
 import NavBar from './components/NavBar'
 import SocialMedia from './components/SocialMedia'
 import Tags from './components/Tags'
+import WhoIAm from './components/WhoIAm'
 
 function App() {
 
@@ -24,7 +25,9 @@ function App() {
       </section>
 
       {/*//1? Who I am section */}
-      <section></section>
+      <section>
+        <WhoIAm/>
+      </section>
 
       {/*//1? Projects section*/}
       <section></section>
