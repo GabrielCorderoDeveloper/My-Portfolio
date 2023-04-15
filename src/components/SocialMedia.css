@@ -1,5 +1,6 @@
   /*^ Social media*/
   .social {
+    max-width: 90vw;
     width: 300px;
     display: flex;
     justify-content: center;

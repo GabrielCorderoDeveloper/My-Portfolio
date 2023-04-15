@@ -7,13 +7,14 @@ interface IFrameProps extends React.HTMLProps<HTMLIFrameElement> {
 
 const WhoIAm = () => {
   return (
-    <div className="d-flex row align-content-between">
+    <div className="d-flex row align-content-between main-w-container">
       <p className='col-md-12 title who-t-spacing'>Who I am?</p>
 
       <div className="col-md-8 who-spacing">
         <iframe
-          width="560"
-          height="315"
+          className='responsive-iframe'
+          // width={840}
+          // height={472.5}
           src="https://www.youtube.com/embed/J7vB-zKAOCg"
           title="YouTube video player"
           frameBorder="0"
@@ -22,7 +23,7 @@ const WhoIAm = () => {
         ></iframe>
       </div>
 
-      <p className="col-md-4 paragraph text-darkGray who-spacing">
+      <p className="col-md-4 paragraph text-darkGray who-spacing d-flex align-items-center">
         I am an extremely dedicated person following his dream of become a Front
         End developer.
       </p>

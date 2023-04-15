@@ -1,3 +1,59 @@
+/*1? Importing external fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*1? Setting the rem size and getting rid of the default styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+html {
+    font-size: 62.5%; /*1? Each rem is equal to 10px*/
+}
+
+/*1? Custom colors */ /*The colors are also impremented on bootstrap*/
+:root {
+    --clear-white: #FFFFFF;
+
+    --light-gray: #DADADA;
+    --dark-gray: #7A7A7A;
+    --light-black: #282828;
+
+    --dark-blue: #1E2B32;
+
+    --main-color: #72DF1D;
+    --secondary-color: #CFECA0;
+}
+
+/*2? Fixing any possible overflow*/
+html {
+    overflow-x: hidden;
+}
+/*2? Customizing scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark-blue); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  
 .first-social {
     margin-top: 120px;
     margin-left: 15%;
@@ -9,5 +65,13 @@
     .first-social {
         margin-top: 120px;
         margin-left: 10%;
+    }
+}
+
+/*~ Small Phone variant <-----------------------------------------------------------------------*/
+@media (max-width: 330px) {
+    /*^ SocialMedia component*/
+    .first-social {
+        margin-left: 4.5%;
     }
 }

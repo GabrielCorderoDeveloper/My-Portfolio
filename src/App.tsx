@@ -11,7 +11,7 @@ import WhoIAm from './components/WhoIAm'
 function App() {
 
   return (
-    <div>
+    <div className='application'>
       <NavBar/>
 
       {/*//1? Upper section */}

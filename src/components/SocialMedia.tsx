@@ -1,5 +1,6 @@
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube, AiOutlineInstagram } from "react-icons/ai";
 import './SocialMedia.css';
+import { useState, useEffect } from 'react';
 
 interface Props {
     color: string;
@@ -7,11 +8,19 @@ interface Props {
 }
 
 const SocialMedia = ({ color, background }: Props) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     //Default styling for all the icons.
     const style = {
         color: color,
-        fontSize: "50px",
+        fontSize: windowWidth < 400 ? "40px" : "50px",
     }
+
+    useEffect(() => {
+      const handleResize = () => setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     /*These links will be used on each icon to open a new tab with the indicated link
     if clicked. */
