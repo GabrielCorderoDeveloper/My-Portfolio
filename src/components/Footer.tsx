@@ -20,6 +20,8 @@ const Footer = () => {
                 <li>JSX</li>
                 <li>Bootstrap</li>
                 <li>React</li>
+                <li>gsap library</li>
+                <li>PACE library</li>
             </p>
 
             <div className="col-md-4 row-spacing row-text">
