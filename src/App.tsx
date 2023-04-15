@@ -18,7 +18,7 @@ function App() {
         <BigRectangle/>
         <MainText/>
         <Tags/>
-        <div className='first-social'>
+        <div className='first-social down-animation'>
           <SocialMedia color='white' background={true}/>
         </div>
       </section>

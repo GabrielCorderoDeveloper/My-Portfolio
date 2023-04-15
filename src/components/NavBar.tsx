@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
   return (
-    <Navbar className='d-flex flex-row-reverse justify-content-between nav-bar'
+    <Navbar className='d-flex flex-row-reverse justify-content-between nav-bar up-animation'
      expand="sm" collapseOnSelect>
 
       <Navbar.Brand>

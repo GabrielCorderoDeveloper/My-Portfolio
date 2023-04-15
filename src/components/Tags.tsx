@@ -2,7 +2,7 @@ import './Tags.css';
 
 const Tags = () => {
   return (
-    <div className="d-flex flex-wrap col-lg-4 col-md-8 tag-container">
+    <div className="d-flex flex-wrap col-lg-4 col-md-8 tag-container left-animation ">
       <div className="tag text-lightBlack bg-secondaryColor">HTML</div>
       <div className="tag text-clearWhite bg-mainColor">CSS</div>
       <div className="tag text-clearWhite bg-lightBlack">JavaScript</div>
