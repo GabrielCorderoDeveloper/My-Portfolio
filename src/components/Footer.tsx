@@ -27,10 +27,11 @@ const Footer = () => {
                 <li>JSX</li>
                 <li>Bootstrap</li>
                 <li>React</li>
+                <li>React Icons</li>
             </p>
 
             <div className="col-md-4 row-spacing row-text">
-                <p className="text-darkGray">To know more how this project was build step and how I create projects </p>
+                <p className="text-darkGray">To know more how this project was build step and how I create projects.</p>
                 <a className="text-darkBlue" onClick={handleShowModal}>Click here</a>
             </div>
         </div>
