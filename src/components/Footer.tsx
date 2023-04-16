@@ -1,7 +1,14 @@
 import SocialMedia from "./SocialMedia"
 import './Footer.css';
+import MoreModal from "./MoreModal";
+import { useState } from "react";
 
 const Footer = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleShowModal = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
+
   return (
     <footer className="bg-secondaryColor">
         {/*//1? Upper footer */}
@@ -24,7 +31,7 @@ const Footer = () => {
 
             <div className="col-md-4 row-spacing row-text">
                 <p className="text-darkGray">To know more how this project was build step and how I create projects </p>
-                <a className="text-darkBlue" href="#">Click here</a>
+                <a className="text-darkBlue" onClick={handleShowModal}>Click here</a>
             </div>
         </div>
 
@@ -39,6 +46,7 @@ const Footer = () => {
             </div>
         </div>
 
+        <MoreModal showModal={showModal} handleCloseModal={handleCloseModal} />
     </footer>
   )
 }

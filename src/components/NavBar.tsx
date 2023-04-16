@@ -1,8 +1,15 @@
 import Navbar from 'react-bootstrap/esm/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './NavBar.css'
+import MoreModal from './MoreModal';
+import { useState } from 'react';
 
 const NavBar = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
   return (
     <Navbar className='d-flex flex-row-reverse justify-content-between nav-bar up-animation'
      expand="sm" collapseOnSelect>
@@ -24,10 +31,12 @@ const NavBar = () => {
             <Nav.Link className='text-darkGray px-1' href='#projects'>Portfolio</Nav.Link>
           </div>
           <div className='nav-item-bottom bg-clearWhite'>
-            <Nav.Link className='text-darkGray px-1' href='#'>More</Nav.Link>
+            <Nav.Link className='text-darkGray px-1' onClick={handleShowModal}>More</Nav.Link>
           </div>
         </Nav>
       </Navbar.Collapse>
+
+      <MoreModal showModal={showModal} handleCloseModal={handleCloseModal} />
 
     </Navbar>
   )
