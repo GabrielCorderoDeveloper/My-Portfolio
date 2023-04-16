@@ -3,6 +3,7 @@ import BigRectangle from './components/BigRectangle'
 import Footer from './components/Footer'
 import MainText from './components/MainText'
 import NavBar from './components/NavBar'
+import Projects from './components/Projects'
 import SocialMedia from './components/SocialMedia'
 import Tags from './components/Tags'
 import WhoIAm from './components/WhoIAm'
@@ -29,7 +30,9 @@ function App() {
       </section>
 
       {/*//1? Projects section*/}
-      <section></section>
+      <section>
+        <Projects/>
+      </section>
 
       {/*//1? Footer*/}
       <Footer/>

@@ -1,0 +1,8 @@
+  /*^ Projects component */
+  /*//1?The styling for the title is reused from WhoIAm component*/
+
+/*~ Tablet variant <-----------------------------------------------------------------------*/
+@media (max-width: 820px) {}
+
+  /*~ Phone variant <-----------------------------------------------------------------------*/
+@media (max-width: 600px) {}
