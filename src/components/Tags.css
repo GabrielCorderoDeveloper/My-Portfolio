@@ -15,6 +15,15 @@
     font-size: 1.8rem; /* 18px */
     font-family: 'Roboto Serif', serif;
     font-weight: 800;
+    transition: 0.25s;
+
+    /*1? Preventing text selection*/
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  .tag:hover {
+    transform: rotate(6deg);
   }
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/
