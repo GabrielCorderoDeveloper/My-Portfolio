@@ -7,7 +7,6 @@
     font-size: 5.2rem; /* 52px */
     line-height: 105.5%;
   }
-
   .paragraph {
     font-size: 2rem; /* 20px */
     line-height: 105.5%;
@@ -36,7 +35,6 @@
     color: var(--light-black) !important;
     text-decoration: underline;
   }
-
   .white-transparent-bg {
     border-radius: 15px;
     padding: 0px 10px;

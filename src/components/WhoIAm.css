@@ -2,25 +2,21 @@
 .main-w-container {
   width: 100vw;
 }
-
 div .who-t-spacing {
     margin-top: 150px;
     padding-left: 125px;
     margin-bottom: 50px;
 }
-
  div > .who-spacing {
   padding: 0 9%;
 }
-
 .who-spacing.paragraph {
   padding-left: 0;
   padding-bottom: 50px;
 } 
-
 .responsive-iframe {
   width: 46vw;
-  height: calc(15vw * 1.73); /*2? The size of the youtube video will change and adapt depending on the screen width*/
+  height: calc(15vw * 1.73); /*1? The size of the youtube video will change and adapt depending on the screen width*/
 }
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/
@@ -28,15 +24,13 @@ div .who-t-spacing {
   div > .who-spacing {
     padding: 0 12%;
   }
-  
   .who-spacing.paragraph {
     padding: 40px 15% 0 15%;
     padding-bottom: 0;
   } 
-  
   .responsive-iframe {
     width: calc(46vw * 1.7);
-    height: calc((15vw * 1.73) * 1.7); /*2? The size of the youtube video will change and adapt depending on the screen width*/
+    height: calc((15vw * 1.73) * 1.7); /*1? The size of the youtube video will change and adapt depending on the screen width*/
   }
 }
 
@@ -44,5 +38,5 @@ div .who-t-spacing {
 @media (max-width: 600px) {
   div .who-t-spacing {
     padding-left: 15%;
-}
+  }
 }

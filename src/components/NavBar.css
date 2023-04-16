@@ -37,11 +37,9 @@
     text-decoration: underline;
     -webkit-text-stroke: 0.5px var(--main-color);
 }
-.navbar-toggler-icon {
+.navbar-toggler-icon { /*//1? This is the bootstrap hambuer menu*/
   font-size: 2rem; /* 20px */
 }
-
-
 .my-fixed-navbar {
   top: 100%;
   left: 0;
@@ -57,7 +55,6 @@
         font-size: 1.6rem; /* 16px */
         margin: 30px 80px 0px 30px;
     }
-
     .big {
       width: 500px;
     }
@@ -71,13 +68,10 @@
         font-size: 1.6rem; /* 16px */
         margin: 10px 0px 390px 30px;
     }
-
     .my-fixed-navbar {
       position: absolute;
     }
-
     .big {
       width: 300px;
     }
-
 }

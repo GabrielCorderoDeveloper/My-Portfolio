@@ -1,10 +1,5 @@
 import './WhoIAm.css';
 
-interface IFrameProps extends React.HTMLProps<HTMLIFrameElement> {
-  frameborder?: number;
-}
-
-
 const WhoIAm = () => {
   return (
     <div className="d-flex row align-content-between main-w-container">
@@ -13,8 +8,7 @@ const WhoIAm = () => {
       <div className="col-md-8 who-spacing">
         <iframe
           className='responsive-iframe'
-          // width={840}
-          // height={472.5}
+          // The properties width and height are not defined becouse they will be set in a responsive manner using css.
           src="https://www.youtube.com/embed/J7vB-zKAOCg"
           title="YouTube video player"
           frameBorder="0"

@@ -16,6 +16,7 @@ const SocialMedia = ({ color, background }: Props) => {
         fontSize: windowWidth < 400 ? "40px" : "50px",
     }
 
+    //If the width of the page changes the icon size will to.
     useEffect(() => {
       const handleResize = () => setWindowWidth(window.innerWidth);
       window.addEventListener("resize", handleResize);
@@ -39,7 +40,7 @@ const SocialMedia = ({ color, background }: Props) => {
     }
 
   return (
-    <div className={ background ? "social big social-bg" : 'social'}>
+    <div className={ background ? "social big social-bg" : 'social'}> {/*//1? The styles change depending if the background propierty is true*/}
         <a target="_blank" href={links.youtube}><AiFillYoutube style={style}/></a>
         <a target="_blank" href={links.instagram}><AiOutlineInstagram style={style}/></a>
         <a target="_blank" href={links.github}><AiFillGithub style={style}/></a>

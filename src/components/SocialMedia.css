@@ -5,24 +5,19 @@
     display: flex;
     justify-content: center;
   }
-
-  .big {
+  .big { /*//1? This class is to add width to the element only if the background propriety is true*/
     width: 620px;
   }
-
   .social a {
     padding: 10px;
   }
-
   .social a svg {
     transition: 0.3s;
   }
-
   .social a:hover svg {
     color: var(--main-color) !important;
     transform: rotate(10deg);
   }
-  
   .social-bg {
     background-color: #282828;
     border-radius: 20px;
