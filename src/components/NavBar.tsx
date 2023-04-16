@@ -18,10 +18,10 @@ const NavBar = () => {
       <Navbar.Collapse  className='my-fixed-navbar'>
         <Nav>
           <div className='nav-item-top bg-clearWhite'>
-            <Nav.Link className='text-darkGray px-1' href='#'>About me</Nav.Link>
+            <Nav.Link className='text-darkGray px-1' href='#whoIAm'>About me</Nav.Link>
           </div>
           <div className='nav-item bg-clearWhite'>
-            <Nav.Link className='text-darkGray px-1' href='#'>Portfolio</Nav.Link>
+            <Nav.Link className='text-darkGray px-1' href='#projects'>Portfolio</Nav.Link>
           </div>
           <div className='nav-item-bottom bg-clearWhite'>
             <Nav.Link className='text-darkGray px-1' href='#'>More</Nav.Link>

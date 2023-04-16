@@ -2,7 +2,7 @@ import './WhoIAm.css';
 
 const WhoIAm = () => {
   return (
-    <div className="d-flex row align-content-between main-w-container">
+    <div id='whoIAm' className="d-flex row align-content-between main-w-container">
       <p className='col-md-12 title who-t-spacing'>Who I am?</p>
 
       <div className="col-md-8 who-spacing">

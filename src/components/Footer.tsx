@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="d-flex justify-content-between flex-wrap footer-father">
             <div className="row col-md-4 row-spacing row-links">
                 <a className="text-darkBlue" href="#">Contact</a>
-                <a className="text-darkBlue" href="#">About me</a>
-                <a className="text-darkBlue" href="#">Portfolio</a>
+                <a className="text-darkBlue" href="#whoIAm">About me</a>
+                <a className="text-darkBlue" href="#projects">Portfolio</a>
             </div>
 
             <p className="col-md-4 row-spacing text-darkGray">
