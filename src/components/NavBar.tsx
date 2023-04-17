@@ -3,12 +3,18 @@ import Nav from 'react-bootstrap/Nav';
 import './NavBar.css'
 import MoreModal from './MoreModal';
 import { useState } from 'react';
+import ContactMe from './ContactMe';
 
 const NavBar = () => {
-  const [showModal, setShowModal] = useState(false);
+    //1! More modal
+    const [showModal, setShowModal] = useState(false);
+    const handleShowModal = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
 
-  const handleShowModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
+    //1! Contact modal
+    const [showModalContact, setShowModalContact] = useState(false);
+    const handleShowModalContact = () => setShowModalContact(true);
+    const handleCloseModalContact = () => setShowModalContact(false);
 
   return (
     <Navbar className='d-flex flex-row-reverse justify-content-between nav-bar up-animation'
@@ -16,7 +22,7 @@ const NavBar = () => {
 
       <Navbar.Brand> {/*//1? This is the Contact me button */}
          <div className='nav-circle bg-clearWhite'>
-             <Nav.Link className='text-lightBlack' href='#'>Contact me</Nav.Link>
+             <Nav.Link className='text-lightBlack' onClick={handleShowModalContact}>Contact me</Nav.Link>
         </div> {/*//1? The parent has flex-reverse so that the button will be showed at the end.
                   //1? this was made to have the button when the navbar shrinks into the hambuerme menu*/}
       </Navbar.Brand>
@@ -37,6 +43,7 @@ const NavBar = () => {
       </Navbar.Collapse>
 
       <MoreModal showModal={showModal} handleCloseModal={handleCloseModal} />
+      <ContactMe showModalContact={showModalContact} handleCloseModalContact={handleCloseModalContact} />
 
     </Navbar>
   )

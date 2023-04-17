@@ -2,19 +2,25 @@ import SocialMedia from "./SocialMedia"
 import './Footer.css';
 import MoreModal from "./MoreModal";
 import { useState } from "react";
+import ContactMe from "./ContactMe";
 
 const Footer = () => {
+    //1! More modal
     const [showModal, setShowModal] = useState(false);
-
     const handleShowModal = () => setShowModal(true);
     const handleCloseModal = () => setShowModal(false);
+
+    //1! Contact modal
+    const [showModalContact, setShowModalContact] = useState(false);
+    const handleShowModalContact = () => setShowModalContact(true);
+    const handleCloseModalContact = () => setShowModalContact(false);
 
   return (
     <footer className="bg-secondaryColor">
         {/*//1? Upper footer */}
         <div className="d-flex justify-content-between flex-wrap footer-father">
             <div className="row col-md-4 row-spacing row-links">
-                <a className="text-darkBlue" href="#">Contact</a>
+                <a className="text-darkBlue" onClick={handleShowModalContact}>Contact</a>
                 <a className="text-darkBlue" href="#whoIAm">About me</a>
                 <a className="text-darkBlue" href="#projects">Portfolio</a>
             </div>
@@ -48,6 +54,7 @@ const Footer = () => {
         </div>
 
         <MoreModal showModal={showModal} handleCloseModal={handleCloseModal} />
+        <ContactMe showModalContact={showModalContact} handleCloseModalContact={handleCloseModalContact} />
     </footer>
   )
 }
