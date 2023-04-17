@@ -1,8 +1,8 @@
 .modal {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 2rem; /* 20px */
-  }
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem; /* 20px */
+}
 div.modal-header {
   background-color: var(--dark-blue);
   color: var(--clear-white);
