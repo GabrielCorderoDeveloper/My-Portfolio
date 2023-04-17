@@ -1,27 +1,27 @@
-.modal {
+.modal.contact {
     width: 100%;
     margin: 0 auto;
     font-size: 2rem; /* 20px */
 }
-div.modal-header {
+div.modal-header.contact {
   background-color: var(--dark-blue);
   color: var(--clear-white);
 }
-div.modal-title {
+div.modal-title.contact {
   font-size: 2rem; /* 20px */
   font-weight: bold;
 }
-div.modal-body {
+div.modal-body.contact {
   background-color: var(--clear-white);
   color: var(--dark-blue);
   padding: 0 30px 30px 30px;
 }
-button.btn-close{ /*Styling for the close button*/
+button.btn-close.contact { /*Styling for the close button*/
   background-color: var(--main-color);
   opacity: 1;
 }
 
-div.modal-body > p {
+div.modal-body.contact > p {
   line-height: 100%;
   margin-top: 30px;
 }
