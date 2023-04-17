@@ -15,7 +15,7 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
       <Modal.Body>
         <p>
           The project before being coded was designed using Figma{" "}
-          <a
+          <a className='text-mainColor font-weight-bold'
             href="https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3"
             target="_blank"
           >

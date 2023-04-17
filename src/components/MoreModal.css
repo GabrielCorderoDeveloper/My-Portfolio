@@ -20,7 +20,6 @@ button.btn-close{ /*Styling for the close button*/
   background-color: var(--main-color);
   opacity: 1;
 }
-
 div.modal-body > p {
   line-height: 100%;
   margin-top: 30px;
