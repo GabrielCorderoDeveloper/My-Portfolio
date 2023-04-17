@@ -17,7 +17,7 @@ const MainText = () => {
             </div>
             <button className='bg-mainColor button text-clearWhite' onClick={handleShowModalContact}>Hire me</button>
         </div>
-        <ContactMe showModalContact={showModalContact} handleCloseModalContact={handleCloseModalContact} />
+        <ContactMe showModalContact={showModalContact} handleCloseModalContact={handleCloseModalContact} text='Hire me'/>
       </>
   )
 }
