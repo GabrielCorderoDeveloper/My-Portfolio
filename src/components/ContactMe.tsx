@@ -1,6 +1,7 @@
-import { Component, ChangeEvent, FormEvent } from 'react';
+import { Component, ChangeEvent, FormEvent, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './ContactMe.css';
+import axios from 'axios';
 
 interface Props {
   showModalContact: boolean;
@@ -14,92 +15,107 @@ interface State {
   message: string;
 }
 
-class ContactMe extends Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-    };
-  }
+const ContactMe = (props: Props) => {
+  const [state, setState] = useState<State>({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  handleSubmit(event: FormEvent<HTMLFormElement>): void {
+  const formId = 'U6zRswS7';
+  const formSparkUrl = `https://submit-form.com/${formId}`;
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(this.state);
-    this.props.handleCloseModalContact();
+    // props.handleCloseModalContact();
+    await postSubmission();
+  };
+
+  const postSubmission = async () => {
+    const payload = {
+      name: state.name,
+      email: state.email,
+      message: state.message,
+    }
+
+    try {
+      const result = await axios.post(formSparkUrl, payload);
+      console.log(result);
+      resetForm();
+
+    } catch(error) {
+      console.log(error);
+    }
   }
 
-  onNameChange(event: ChangeEvent<HTMLInputElement>): void {
-    this.setState({ name: event.target.value })
-  }
+  const resetForm = () => {
+    setState({ name: ``, email: ``, message: `` });
+  };
 
-  onEmailChange(event: ChangeEvent<HTMLInputElement>): void {
-    this.setState({ email: event.target.value })
-  }
+  const onNameChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setState({ ...state, name: event.target.value });
+  };
 
-  onMessageChange(event: ChangeEvent<HTMLTextAreaElement>): void {
-    this.setState({ message: event.target.value })
-  }
+  const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setState({ ...state, email: event.target.value });
+  };
 
-  render() {
-    return (
-      <Modal
-        className="contact"
-        show={this.props.showModalContact}
-        onHide={this.props.handleCloseModalContact}
-        size="lg"
-      >
-        <Modal.Header className="contact" closeButton>
-          <Modal.Title className="contact">{this.props.text ? this.props.text : 'Contact me'}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="contact">
-          <form
-            id="contact-form"
-            onSubmit={this.handleSubmit.bind(this)}
-            method="POST"
+  const onMessageChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
+    setState({ ...state, message: event.target.value });
+  };
+
+  return (
+    <Modal
+      className="contact"
+      show={props.showModalContact}
+      onHide={props.handleCloseModalContact}
+      size="lg"
+    >
+      <Modal.Header className="contact" closeButton>
+        <Modal.Title className="contact">{props.text ? props.text : 'Contact me'}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body className="contact">
+        <form id="contact-form" onSubmit={handleSubmit} method="POST">
+          <div className="form-group  mt-4">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              className="form-control  rounded-4 mb-4"
+              placeholder="Your name"
+              value={state.name}
+              onChange={onNameChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              className="form-control rounded-4 mb-4"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              value={state.email}
+              onChange={onEmailChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              className="form-control rounded-4"
+              rows={5}
+              value={state.message}
+              onChange={onMessageChange}
+            />
+          </div>
+          <button
+            type="submit"
+            className="contact btn btn-lg btn-mainColor mt-4 px-5 pt-2 pb-0 rounded-5 font-weight-bold"
           >
-            <div className="form-group  mt-4">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                className="form-control  rounded-4 mb-4"
-                placeholder="Your name"
-                value={this.state.name}
-                onChange={this.onNameChange.bind(this)}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Email address</label>
-              <input
-                type="email"
-                className="form-control rounded-4 mb-4"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
-                value={this.state.email}
-                onChange={this.onEmailChange.bind(this)}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                className="form-control rounded-4"
-                rows={5}
-                value={this.state.message}
-                onChange={this.onMessageChange.bind(this)}
-              />
-            </div>
-            <button
-              type="submit"
-              className="contact btn btn-lg btn-mainColor mt-4 px-5 pt-2 pb-0 rounded-5 font-weight-bold"
-            >
-              Submit
-            </button>
-          </form>
-        </Modal.Body>
-      </Modal>
-    );
-  }
-}
+            Submit
+          </button>
+        </form>
+      </Modal.Body>
+    </Modal>
+  );
+};
 
 export default ContactMe;
