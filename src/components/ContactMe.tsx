@@ -1,7 +1,8 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './ContactMe.css';
 import axios from 'axios';
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface Props {
   showModalContact: boolean;
@@ -31,10 +32,12 @@ const ContactMe = (props: Props) => {
 
   const formId = 'U6zRswS7';
   const formSparkUrl = `https://submit-form.com/${formId}`;
+  const recaptchaKey = '6LebWZ8lAAAAAGmdZ7uNI3pxSEsoHa3ljb-bOxpI';
+  const recaptchaRef = useRef<any>();
 
   const [submiting, setSubmiting] = useState<boolean>(false);
   const [message, setMessage] = useState<ServiceMessage>();
-
+  const [recaptchaToken, setRecaptchaToken] = useState<String>();
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -49,6 +52,7 @@ const ContactMe = (props: Props) => {
       name: state.name,
       email: state.email,
       message: state.message,
+      'g-recaptcha-response': recaptchaToken,
     }
 
     try {
@@ -58,7 +62,8 @@ const ContactMe = (props: Props) => {
       setMessage({ /*//1? Success message*/
         class: 'alert-mainColor',
         text: 'Thanks, I will be in touch shortly.'
-      })
+      });
+      recaptchaRef.current.reset();
 
     } catch(error) {
       console.log(error);
@@ -91,6 +96,10 @@ const ContactMe = (props: Props) => {
            state.message.trim() !== "";
   };
 
+  const updateRecaptchaToken = (token: string | null) => {
+    setRecaptchaToken(token as string);
+  };
+
   return (
     <Modal
       className="contact"
@@ -107,9 +116,11 @@ const ContactMe = (props: Props) => {
         <form id="contact-form" onSubmit={handleSubmit} method="POST">
           <div className="form-group  mt-4">
             {/*//!Alert---------> */}
-            {message && <div className={`alert ${message.class}`} role="alert">
-              {message.text}
-              </div>}
+            {message && (
+              <div className={`alert ${message.class}`} role="alert">
+                {message.text}
+              </div>
+            )}
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -139,6 +150,14 @@ const ContactMe = (props: Props) => {
               onChange={onMessageChange}
             />
           </div>
+
+          <ReCAPTCHA 
+            className='pt-3'
+            ref={recaptchaRef}
+            sitekey={recaptchaKey} 
+            onChange={updateRecaptchaToken}
+          />
+
           <button
             type="submit"
             className="contact btn btn-lg btn-mainColor mt-4 px-5 pt-2 pb-0 rounded-5 font-weight-bold"
