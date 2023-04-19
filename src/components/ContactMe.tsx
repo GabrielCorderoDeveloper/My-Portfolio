@@ -1,4 +1,4 @@
-import { Component, ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './ContactMe.css';
 import axios from 'axios';
@@ -13,6 +13,12 @@ interface State {
   name: string;
   email: string;
   message: string;
+  formIsValid: boolean;
+}
+
+interface ServiceMessage {
+  class: string;
+  text: string;
 }
 
 const ContactMe = (props: Props) => {
@@ -20,6 +26,7 @@ const ContactMe = (props: Props) => {
     name: "",
     email: "",
     message: "",
+    formIsValid: false,
   });
 
   const formId = 'U6zRswS7';
@@ -27,9 +34,11 @@ const ContactMe = (props: Props) => {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // props.handleCloseModalContact();
+    // props.handleCloseModalContact(); this closes the modal
     await postSubmission();
   };
+
+  const [message, setMessage] = useState<ServiceMessage>();
 
   const postSubmission = async () => {
     const payload = {
@@ -48,8 +57,8 @@ const ContactMe = (props: Props) => {
     }
   }
 
-  const resetForm = () => {
-    setState({ name: ``, email: ``, message: `` });
+  const resetForm = () => { //1? this function resets the form.
+    setState({ name: ``, email: ``, message: ``, formIsValid: false });
   };
 
   const onNameChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -62,6 +71,12 @@ const ContactMe = (props: Props) => {
 
   const onMessageChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setState({ ...state, message: event.target.value });
+  };
+
+  const validateForm = () => { //1? This validates if all the inputs are complete.
+    return state.name.trim() !== "" &&
+           state.email.trim() !== "" &&
+           state.message.trim() !== "";
   };
 
   return (
@@ -109,6 +124,7 @@ const ContactMe = (props: Props) => {
           <button
             type="submit"
             className="contact btn btn-lg btn-mainColor mt-4 px-5 pt-2 pb-0 rounded-5 font-weight-bold"
+            disabled={!validateForm()}
           >
             Submit
           </button>
