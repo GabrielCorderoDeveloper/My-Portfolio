@@ -47,3 +47,7 @@ input.form-control:focus, textarea.form-control:focus {
   border-color: var(--secondary-color);  
   box-shadow: var(--secondary-color) inset -2px 2px 4px, var(--secondary-color) inset 2px -2px 4px  ; 
 }
+
+textarea.form-control {
+  resize: none;
+}
