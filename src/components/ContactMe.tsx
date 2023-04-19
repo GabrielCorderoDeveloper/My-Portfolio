@@ -77,7 +77,8 @@ const ContactMe = (props: Props) => {
   }
 
   const resetForm = () => { //1? this function resets the form.
-    setState({ name: ``, email: ``, message: ``, formIsValid: false , isRecaptchaComplete: false  });
+    setState({ name: ``, email: ``, message: ``, formIsValid: false , isRecaptchaComplete: false 
+   });
   };
 
   const onNameChange = (event: ChangeEvent<HTMLInputElement>) => {

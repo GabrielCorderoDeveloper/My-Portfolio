@@ -26,18 +26,19 @@ const Footer = () => {
             </div>
 
             <p className="col-md-4 row-spacing text-darkGray">
-            This portfolio is made using the following technologies:
+            This portfolio is made using the following technologies and libraries:
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Typescript</li>
-                <li>JSX</li>
                 <li>Bootstrap</li>
                 <li>React</li>
                 <li>React Icons</li>
+                <li>Axios</li>
+                <li>Google ReCAPTCHA</li>
             </p>
 
             <div className="col-md-4 row-spacing row-text">
-                <p className="text-darkGray">To know more how this project was build step and how I create projects.</p>
+                <p className="text-darkGray">To learn more about the steps I took to build this project and my project creation process.</p>
                 <a className="text-darkBlue" onClick={handleShowModal}>Click here</a>
             </div>
         </div>

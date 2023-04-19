@@ -8,11 +8,11 @@ div .who-t-spacing {
     margin-bottom: 50px;
 }
  div > .who-spacing {
-  padding: 0 9%;
+  padding: 0 8%;
 }
 .who-spacing.paragraph {
   padding-left: 0;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 } 
 .responsive-iframe {
   width: 46vw;
@@ -20,12 +20,12 @@ div .who-t-spacing {
 }
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/
-@media (max-width: 770px) {
+@media (max-width: 990px) {
   div > .who-spacing {
     padding: 0 12%;
   }
   .who-spacing.paragraph {
-    padding: 40px 15% 0 15%;
+    padding: 40px 8% 0 10%;
     padding-bottom: 0;
   } 
   .responsive-iframe {

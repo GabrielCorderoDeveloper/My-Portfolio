@@ -14,14 +14,18 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
       </Modal.Header>
       <Modal.Body>
         <p>
-          The project before being coded was designed using Figma{" "}
-          <a className='text-mainColor font-weight-bold'
+          My process as a Front End Developer involves following industry
+          standards and best practices to ensure high-quality work. Before
+          beginning the development, I start with the design
+          phase using Figma to create a visual representation of the project{" "}
+          <a
+            className="text-mainColor font-weight-bold"
             href="https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3"
             target="_blank"
           >
-            Project link
-          </a>{" "}
-          and once the design phase was done the developing phase began. The
+            Figma link
+          </a>
+          . Once the design phase was done the developing phase began. The
           project was built using the following technologies:
         </p>
         <ul>
@@ -32,17 +36,27 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
           <li>CSS</li>
         </ul>
         <p>
-          The boilerplate of the application was made using vite, and then all
-          the unnecessary elements were removed.
+          To streamline the development process, I utilized a Vite boilerplate
+          and removed unnecessary elements.
         </p>
         <p>
           After that, libraries like React Bootstrap and React Icons were
           installed, followed by Typescript.
         </p>
         <p>
-          Then the git repository was initialized, in which all the changes were
-          carefully committed. All the react components follow Pascal case
-          naming, and each one has its own CSS file.
+          Next, I installed libraries such as React Bootstrap and React Icons,
+          followed by implementing Typescript. Throughout development, I used
+          Git for version control, carefully committing changes. Each React
+          component was named following Pascal case naming and had its own CSS
+          file.
+        </p>
+        <p>
+          In addition, to ensure the security of contact forms, I implemented
+          the Axios library to transmit form data to Formspark, while
+          integrating the Google reCAPTCHA library to prevent spam. By adhering
+          to these standards and utilizing the latest technologies, I create
+          projects that are not only visually appealing but also user-friendly
+          and secure.
         </p>
       </Modal.Body>
     </Modal>
