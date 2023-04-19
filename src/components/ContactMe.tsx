@@ -32,13 +32,17 @@ const ContactMe = (props: Props) => {
   const formId = 'U6zRswS7';
   const formSparkUrl = `https://submit-form.com/${formId}`;
 
+  const [submiting, setSubmiting] = useState<boolean>(false);
+  const [message, setMessage] = useState<ServiceMessage>();
+
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setSubmiting(true);
     // props.handleCloseModalContact(); this closes the modal
     await postSubmission();
+    setSubmiting(false);
   };
-
-  const [message, setMessage] = useState<ServiceMessage>();
 
   const postSubmission = async () => {
     const payload = {
@@ -51,9 +55,17 @@ const ContactMe = (props: Props) => {
       const result = await axios.post(formSparkUrl, payload);
       console.log(result);
       resetForm();
+      setMessage({ /*//1? Success message*/
+        class: 'alert-mainColor',
+        text: 'Thanks, I will be in touch shortly.'
+      })
 
     } catch(error) {
       console.log(error);
+      setMessage({ /*//1? Error message*/
+      class: 'alert-danger',
+      text: 'Sorry, something went wrong. Please try again.'
+    })
     }
   }
 
@@ -87,11 +99,17 @@ const ContactMe = (props: Props) => {
       size="lg"
     >
       <Modal.Header className="contact" closeButton>
-        <Modal.Title className="contact">{props.text ? props.text : 'Contact me'}</Modal.Title>
+        <Modal.Title className="contact">
+          {props.text ? props.text : "Contact me"}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body className="contact">
         <form id="contact-form" onSubmit={handleSubmit} method="POST">
           <div className="form-group  mt-4">
+            {/*//!Alert---------> */}
+            {message && <div className={`alert ${message.class}`} role="alert">
+              {message.text}
+              </div>}
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -126,7 +144,7 @@ const ContactMe = (props: Props) => {
             className="contact btn btn-lg btn-mainColor mt-4 px-5 pt-2 pb-0 rounded-5 font-weight-bold"
             disabled={!validateForm()}
           >
-            Submit
+            {submiting ? "Submiting..." : "Submit"}
           </button>
         </form>
       </Modal.Body>
