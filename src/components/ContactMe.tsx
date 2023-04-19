@@ -15,6 +15,7 @@ interface State {
   email: string;
   message: string;
   formIsValid: boolean;
+  isRecaptchaComplete: boolean;
 }
 
 interface ServiceMessage {
@@ -28,6 +29,7 @@ const ContactMe = (props: Props) => {
     email: "",
     message: "",
     formIsValid: false,
+    isRecaptchaComplete: false ,
   });
 
   const formId = 'U6zRswS7';
@@ -75,7 +77,7 @@ const ContactMe = (props: Props) => {
   }
 
   const resetForm = () => { //1? this function resets the form.
-    setState({ name: ``, email: ``, message: ``, formIsValid: false });
+    setState({ name: ``, email: ``, message: ``, formIsValid: false , isRecaptchaComplete: false  });
   };
 
   const onNameChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -93,11 +95,13 @@ const ContactMe = (props: Props) => {
   const validateForm = () => { //1? This validates if all the inputs are complete.
     return state.name.trim() !== "" &&
            state.email.trim() !== "" &&
-           state.message.trim() !== "";
+           state.message.trim() !== "" &&
+           state.isRecaptchaComplete
   };
 
   const updateRecaptchaToken = (token: string | null) => {
     setRecaptchaToken(token as string);
+    setState({ ...state, isRecaptchaComplete: true });
   };
 
   return (
