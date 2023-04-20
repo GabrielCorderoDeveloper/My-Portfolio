@@ -3,6 +3,8 @@
 
 This project was created for two reasons , the first being to show what i'm capable to build as a developer using technologies like: React and Bootstrap 5. The second reason is to show my other projects.
 
+- [Portfolio link](https://gabrielcorderodeveloper.github.io/My-Portfolio/)
+
 
 
 ## About the project
