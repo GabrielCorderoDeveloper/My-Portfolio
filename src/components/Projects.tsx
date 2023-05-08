@@ -4,15 +4,15 @@ const Projects = () => {
 
   const data = [
     {
-      link: "https://github.com/GabrielCorderoDeveloper",
-      text: "How to afford a tesla",
-      image: "https://tesla-cdn.thron.com/delivery/public/image/tesla/c82315a6-ac99-464a-a753-c26bc0fb647d/bvlatuR/std/1200x628/lhd-model-3-social",
-      alt: "How to afford a tesla"
+      link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
+      text: "React to-do app",
+      image: "./assets/to-do.png",
+      alt: "React to-do app"
     },
     {
       link: "https://github.com/GabrielCorderoDeveloper",
       text: "Coming soon",
-      image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
+      image: "./assets/Ia-coach.jpg",
       alt: "Coming soon"
     },
     {

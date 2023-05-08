@@ -16,8 +16,8 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
         <p>
           My process as a Front End Developer involves following industry
           standards and best practices to ensure high-quality work. Before
-          beginning the development, I start with the design
-          phase using Figma to create a visual representation of the project{" "}
+          beginning the development, I start with the design phase using Figma
+          to create a visual representation of the project{" "}
           <a
             className="text-mainColor font-weight-bold"
             href="https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3"
@@ -36,8 +36,8 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
           <li>CSS</li>
         </ul>
         <p>
-          To streamline the development process, I utilized a Vite boilerplate
-          and removed unnecessary elements.
+          To streamline the development process, I utilized a Vite and removed
+          unnecessary elements.
         </p>
         <p>
           After that, libraries like React Bootstrap and React Icons were
