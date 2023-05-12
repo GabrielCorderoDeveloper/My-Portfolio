@@ -10,10 +10,10 @@ const Projects = () => {
       alt: "React to-do app"
     },
     {
-      link: "https://github.com/GabrielCorderoDeveloper",
-      text: "Coming soon",
+      link: "https://iapersonallifecoach.com/",
+      text: "Ia Personal Life Coach",
       image: "./assets/Ia-coach.jpg",
-      alt: "Coming soon"
+      alt: "Ia Personal Life Coach"
     },
     {
       link: "https://github.com/GabrielCorderoDeveloper",
