@@ -51,7 +51,7 @@ const Projects = () => {
             style={{ marginTop: `${(index + 1) * 15}px` }}
           >
             <div className="m-auto">
-              <a href={project.link}>
+              <a href={project.link} target='about_blank'>
                 <img className="project-img" src={project.image} alt={project.alt} />
                 <div className={`number-square d-flex align-items-center justify-content-center ${index === 0 ? 'golden' : 'bg-lightBlack'} text-clearWhite rounded-4 pt-2`}>
                   {index + 1}
