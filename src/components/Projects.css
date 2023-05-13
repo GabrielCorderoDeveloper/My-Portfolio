@@ -44,6 +44,11 @@
     transition: 0.3s;
   }
 
+  .project-card .number-square.golden {
+    background-color: gold !important;
+    font-weight: bold;
+  }
+
   .project-card:hover .number-square {
     background-color: var(--main-color) !important;
     border-radius: 50% !important;

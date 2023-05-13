@@ -4,16 +4,22 @@ const Projects = () => {
 
   const data = [
     {
+      link: "https://iapersonallifecoach.com/",
+      text: "Ia Personal Life Coach",
+      image: "./assets/Ia-coach.png",
+      alt: "Ia Personal Life Coach"
+    },
+    {
       link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
       text: "React to-do app",
       image: "./assets/to-do.png",
       alt: "React to-do app"
     },
     {
-      link: "https://iapersonallifecoach.com/",
-      text: "Ia Personal Life Coach",
-      image: "./assets/Ia-coach.jpg",
-      alt: "Ia Personal Life Coach"
+      link: "https://github.com/GabrielCorderoDeveloper/My-Portfolio",
+      text: "My Portfolio",
+      image: "./assets/portfolio.png",
+      alt: "My Portfolio"
     },
     {
       link: "https://github.com/GabrielCorderoDeveloper",
@@ -21,18 +27,12 @@ const Projects = () => {
       image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
       alt: "Coming soon"
     },
-    {
-      link: "https://github.com/GabrielCorderoDeveloper",
-      text: "Coming soon",
-      image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
-      alt: "Coming soon"
-    },
-    {
-      link: "https://github.com/GabrielCorderoDeveloper",
-      text: "Coming soon",
-      image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
-      alt: "Coming soon"
-    }
+    // {
+    //   link: "https://github.com/GabrielCorderoDeveloper",
+    //   text: "Coming soon",
+    //   image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
+    //   alt: "Coming soon"
+    // }
   ];
 
   return (
@@ -53,7 +53,7 @@ const Projects = () => {
             <div className="m-auto">
               <a href={project.link}>
                 <img className="project-img" src={project.image} alt={project.alt} />
-                <div className="number-square d-flex align-items-center justify-content-center bg-lightBlack text-clearWhite rounded-4 pt-2">
+                <div className={`number-square d-flex align-items-center justify-content-center ${index === 0 ? 'golden' : 'bg-lightBlack'} text-clearWhite rounded-4 pt-2`}>
                   {index + 1}
                 </div>
               </a>
