@@ -9,7 +9,8 @@ This project was created for two reasons , the first being to show what i'm capa
 
 ## About the project
 The project before being coded was designed using Figma 
- [(Figma project link)](https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3) and once the design phase was done the developing phase began. The project was built using the following technologies:
+ [(Figma project link)](https://www.figma.com/file/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?type=design&t=7Mf0xUXNaGIR1ddA-1)  [(Figma preview)](https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3)and once the design phase was done the developing phase began. The project was built using the following technologies:
+- Vite
 - React
 - Bootstrap 5
 - Typescript
