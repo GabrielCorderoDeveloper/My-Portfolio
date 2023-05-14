@@ -23,12 +23,23 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
             href="https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3"
             target="_blank"
           >
-            Figma link
+            Figma Preview
+          </a> 
+
+            &nbsp; &nbsp;
+
+          <a
+            className="text-mainColor font-weight-bold"
+            href="https://www.figma.com/file/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?type=design&t=7Mf0xUXNaGIR1ddA-1"
+            target="_blank"
+          >
+            Figma project link
           </a>
           . Once the design phase was done the developing phase began. The
           project was built using the following technologies:
         </p>
         <ul>
+          <li>Vite</li>
           <li>React</li>
           <li>Bootstrap 5</li>
           <li>Typescript</li>
