@@ -22,17 +22,17 @@ const Projects = () => {
       alt: "My Portfolio"
     },
     {
+      link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
+      text: "Summer Clock",
+      image: "./assets/summer-clock.png",
+      alt: "Summer Clock"
+    },
+    {
       link: "https://github.com/GabrielCorderoDeveloper",
       text: "Coming soon",
       image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
       alt: "Coming soon"
-    },
-    // {
-    //   link: "https://github.com/GabrielCorderoDeveloper",
-    //   text: "Coming soon",
-    //   image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
-    //   alt: "Coming soon"
-    // }
+    }
   ];
 
   return (
