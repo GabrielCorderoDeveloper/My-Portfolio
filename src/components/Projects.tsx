@@ -5,9 +5,9 @@ const Projects = () => {
   const data = [
     {
       link: "https://iapersonallifecoach.com/",
-      text: "Ia Personal Life Coach",
-      image: "./assets/Ia-coach.png",
-      alt: "Ia Personal Life Coach"
+      text: "AI Personal Life Coach",
+      image: "./assets/AI-coach.png",
+      alt: "AI Personal Life Coach"
     },
     {
       link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
