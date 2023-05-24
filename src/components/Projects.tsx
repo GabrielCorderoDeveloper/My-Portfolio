@@ -4,7 +4,7 @@ const Projects = () => {
 
   const data = [
     {
-      link: "https://iapersonallifecoach.com/",
+      link: "https://ailifementor.com/",
       text: "AI Personal Life Coach",
       image: "./assets/AI-coach.png",
       alt: "AI Personal Life Coach"
