@@ -10,14 +10,14 @@ const images = [
 
 const ImgSlider = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
+  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
   const [showOverlay, setShowOverlay] = useState(false);
 
   useEffect(() => {
     startInterval();
 
     return () => {
-      clearInterval(intervalId);
+      clearInterval(intervalId as NodeJS.Timeout);
     };
   }, []);
 
@@ -37,7 +37,7 @@ const ImgSlider = () => {
   };
 
   const resetInterval = () => {
-    clearInterval(intervalId);
+    clearInterval(intervalId as NodeJS.Timeout);
     startInterval();
   };
 
