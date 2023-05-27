@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './ImgSlider.css';
 
+//The are the images that I will use
 const images = [
   "./assets/Modern_stack.png",
   "./assets/Unit_testing.png",
