@@ -1,12 +1,13 @@
-import './App.css'
-import BigRectangle from './components/BigRectangle'
-import Footer from './components/Footer'
-import MainText from './components/MainText'
-import NavBar from './components/NavBar'
-import Projects from './components/Projects'
-import SocialMedia from './components/SocialMedia'
-import Tags from './components/Tags'
-import WhoIAm from './components/WhoIAm'
+import './App.css';
+import BigRectangle from './components/BigRectangle';
+import Footer from './components/Footer';
+import MainText from './components/MainText';
+import NavBar from './components/NavBar';
+import Projects from './components/Projects';
+import SocialMedia from './components/SocialMedia';
+import Tags from './components/Tags';
+import WhoIAm from './components/WhoIAm';
+import ImgSlider from './components/ImgSlider';
 
 function App() {
 
@@ -23,6 +24,12 @@ function App() {
           <SocialMedia color='white' background={true}/>
         </div>
       </section>
+
+      {/*//1? Image Slider section */}
+      <section>
+        <ImgSlider/>
+      </section>
+
 
       {/*//1? Who I am section */}
       <section>
