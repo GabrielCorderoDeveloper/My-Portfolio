@@ -2,63 +2,52 @@ import React, { useState, useEffect } from 'react';
 import './ImgSlider.css';
 
 const images = [
-  "https://i.imgur.com/Yszno5e.jpg",
-  "https://i.imgur.com/ZBzbir7.jpg",
-  "https://i.imgur.com/xpeJkkR.jpg",
-  "https://i.imgur.com/0NAc45h.jpg"
+  "./assets/Modern_stack.png",
+  "./assets/Unit_testing.png",
+  "./assets/Quick_learner.png",
+  "./assets/Artistic_background.png"
 ];
 
 const ImgSlider = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
+  const [seconds, setSeconds] = useState(0);
   const [showOverlay, setShowOverlay] = useState(false);
 
   useEffect(() => {
-    startInterval();
+    const intervalId = setInterval(() => {
+      setSeconds((prevSeconds) => prevSeconds + 1);
+    }, 1000);
 
     return () => {
-      clearInterval(intervalId as NodeJS.Timeout);
+      clearInterval(intervalId);
     };
   }, []);
 
+  useEffect(() => { //Every six seconds the image will change
+    if (seconds >= 6) {
+      nextImage();
+    }
+  }, [seconds]);
+
   useEffect(() => {
-    resetInterval();
+    setShowOverlay(true);
+    setTimeout(() => {
+      setShowOverlay(false);
+    }, 500);
   }, [currentImage]);
 
-  const startInterval = () => {
-    const id = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-      setShowOverlay(true);
-      setTimeout(() => {
-        setShowOverlay(false);
-      }, 500);
-    }, 5000);
-    setIntervalId(id);
-  };
-
-  const resetInterval = () => {
-    clearInterval(intervalId as NodeJS.Timeout);
-    startInterval();
-  };
-
-  const nextImage = () => {
+  const nextImage = () => {  //When the image changes the conter is set to 0
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    setShowOverlay(true);
-    setTimeout(() => {
-      setShowOverlay(false);
-    }, 500);
+    setSeconds(0);
   };
 
-  const prevImage = () => {
+  const prevImage = () => {  //When the image changes the conter is set to 0
     setCurrentImage((prevImage) => (prevImage - 1 + images.length) % images.length);
-    setShowOverlay(true);
-    setTimeout(() => {
-      setShowOverlay(false);
-    }, 500);
+    setSeconds(0);
   };
 
   return (
-    <div className="img-slider down-animation ">
+    <div className="img-slider down-animation">
       <div className={`slider-image-container ${showOverlay ? 'overlay-visible' : ''}`}>
         <img className={`slider-image ${showOverlay ? 'blur' : ''}`} src={images[currentImage]} alt="Slider" />
         <div className="slider-overlay"></div>
