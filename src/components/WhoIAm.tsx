@@ -20,7 +20,7 @@ const WhoIAm = () => {
         ></iframe>
       </div>
 
-      <div className='col-lg-5 '>
+      <div className='col-lg-5 pt-lg-5'>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
           As a technology enthusiast, I have always been fascinated by the endless
           possibilities of the tech industry. From the early days of my childhood,

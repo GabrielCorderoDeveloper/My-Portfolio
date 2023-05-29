@@ -17,9 +17,7 @@ const MainText = () => {
             is <b className="roboto">Gabriel</b>
           </p>
           <p className="paragraph text-darkGray">
-            As a passionate and dedicated individual, I am fully committed to
-            achieving my dream of becoming a Front End developer. With a
-            relentless work ethic and unwavering determination.
+          Hello, I'm Gabriel Cordero, a bilingual self-taught Front-End developer fluent in both English and Spanish. I believe my unique journey and diverse background make me an exceptional candidate for your team.
           </p>
         </div>
         <button
