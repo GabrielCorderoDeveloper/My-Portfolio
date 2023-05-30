@@ -8,7 +8,7 @@ const WhoIAm = () => {
     >
       <p className="col-md-12 title who-t-spacing">Who I am?</p>
 
-      <div className="col-lg-7 who-spacing">
+      {/* <div className="col-lg-7 who-spacing">
         <iframe
           className="responsive-iframe"
           // The properties width and height are not defined becouse they will be set in a responsive manner using css.
@@ -18,7 +18,7 @@ const WhoIAm = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
 
       <div className='col-lg-5 pt-lg-5'>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
