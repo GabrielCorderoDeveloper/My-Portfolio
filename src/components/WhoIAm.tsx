@@ -8,19 +8,19 @@ const WhoIAm = () => {
     >
       <p className="col-md-12 title who-t-spacing">Who I am?</p>
 
-      <div className="col-lg-2 who-spacing"> {/* col-7 */}
-        {/* <iframe
+      <div className="col-lg-7 who-spacing"> 
+        <iframe
           className="responsive-iframe"
           // The properties width and height are not defined becouse they will be set in a responsive manner using css.
-          src="https://www.youtube.com/embed/J7vB-zKAOCg"
+          src="https://www.youtube.com/embed/wRwXM96wlhI"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-        ></iframe> */}
+        ></iframe>
       </div>
 
-      <div className='col-lg-8 pt-lg-5'> {/* col-5 */}
+      <div className='col-lg-5 pt-lg-5'> 
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
           As a technology enthusiast, I have always been fascinated by the endless
           possibilities of the tech industry. From the early days of my childhood,
