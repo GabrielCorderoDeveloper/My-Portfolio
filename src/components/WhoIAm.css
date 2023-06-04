@@ -37,6 +37,7 @@ div .who-t-spacing {
 /*~ Phone variant <-----------------------------------------------------------------------*/
 @media (max-width: 600px) {
   div .who-t-spacing {
+    margin-top: 100px;
     padding-left: 15%;
   }
 }
