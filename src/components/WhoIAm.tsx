@@ -42,8 +42,8 @@ const WhoIAm = () => {
         ></iframe>
       </div>
 
-      <div className={`col-lg-5 pt-lg-5 `}>
-      {isVisible ? (
+      <div className={`col-lg-5 pt-lg-5 `}> 
+      {isVisible ? ( //This will be rendered only when the user is on the Who I am section.
       <>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
               As a technology enthusiast, I have always been fascinated by the endless
@@ -56,7 +56,7 @@ const WhoIAm = () => {
         </p>
 
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
-          <Typewriter
+          <Typewriter //Typing effect of the second paragraph
             words={[
               `Driven by my love of technology and a desire to excel in my career, I
               have dedicated myself to becoming a top-tier Front End developer. From

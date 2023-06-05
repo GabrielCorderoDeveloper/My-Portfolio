@@ -22,7 +22,7 @@ const MainText = () => {
           <p className="paragraph text-darkGray">
           Hello, I'm Gabriel Cordero, a bilingual self-taught Front-End developer fluent in both English and Spanish. I believe my unique journey and diverse background make me
           <span className='typing-text'>
-            <Typewriter
+            <Typewriter //Typing effect
               words={[' an exceptional', ' the perfect']}
               loop={true}
               delaySpeed={3000}
