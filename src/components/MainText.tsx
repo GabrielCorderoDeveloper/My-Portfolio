@@ -8,6 +8,7 @@ const MainText = () => {
       const [showModalContact, setShowModalContact] = useState(false);
       const handleShowModalContact = () => setShowModalContact(true);
       const handleCloseModalContact = () => setShowModalContact(false);
+      //This contain 30 empty spaces to avoid line breaking with the typing effect
       const spaces = Array(15).fill('\u00A0').join('');
 
   return (
