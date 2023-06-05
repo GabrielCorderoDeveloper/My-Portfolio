@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import './MainText.css';
 import ContactMe from './ContactMe';
+import { Typewriter, Cursor } from 'react-simple-typewriter';
 
 const MainText = () => {
       //1! Contact modal
       const [showModalContact, setShowModalContact] = useState(false);
       const handleShowModalContact = () => setShowModalContact(true);
       const handleCloseModalContact = () => setShowModalContact(false);
+      const spaces = Array(15).fill('\u00A0').join('');
 
   return (
     <>
@@ -17,7 +19,16 @@ const MainText = () => {
             is <b className="roboto">Gabriel</b>
           </p>
           <p className="paragraph text-darkGray">
-          Hello, I'm Gabriel Cordero, a bilingual self-taught Front-End developer fluent in both English and Spanish. I believe my unique journey and diverse background make me an exceptional candidate for your team.
+          Hello, I'm Gabriel Cordero, a bilingual self-taught Front-End developer fluent in both English and Spanish. I believe my unique journey and diverse background make me
+          <span className='typing-text'>
+            <Typewriter
+              words={[' an exceptional', ' the perfect']}
+              loop={true}
+              delaySpeed={3000}
+            />
+          </span>
+          <Cursor/>
+           {' '}candidate for your team.{spaces}
           </p>
         </div>
         <button
