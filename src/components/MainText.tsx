@@ -9,7 +9,7 @@ const MainText = () => {
       const handleShowModalContact = () => setShowModalContact(true);
       const handleCloseModalContact = () => setShowModalContact(false);
       //This contain 30 empty spaces to avoid line breaking with the typing effect
-      const spaces = Array(15).fill('\u00A0').join('');
+      const spaces = Array(50).fill('\u00A0').join('');
 
   return (
     <>
@@ -23,13 +23,13 @@ const MainText = () => {
           Hello, I'm Gabriel Cordero, a bilingual self-taught Front-End developer fluent in both English and Spanish. I believe my unique journey and diverse background make me
           <span className='typing-text'>
             <Typewriter //Typing effect
-              words={[' an exceptional', ' the perfect']}
+              words={[' an exceptional candidate', ' the perfect candidate']}
               loop={true}
               delaySpeed={3000}
             />
           </span>
           <Cursor/>
-           {' '}candidate for your team.{spaces}
+           {' '} for your team.{spaces}
           </p>
         </div>
         <button
