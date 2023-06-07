@@ -21,7 +21,7 @@ const NavBar = () => {
       <Navbar className='d-flex flex-row-reverse justify-content-between nav-bar up-animation'
        expand="sm" collapseOnSelect>
         <Navbar.Brand> {/*//1? This is the Contact me button */}
-               <button className='text-lightBlack nav-circle bg-clearWhite' onClick={handleShowModalContact}>Contact me</button>
+               <button className='text-lightBlack nav-circle bg-clearWhite normal-font' onClick={handleShowModalContact}>Contact me</button>
           {/*//1? The parent has flex-reverse so that the button will be showed at the end.
                     //1? this was made to have the button when the navbar shrinks into the hambuerme menu*/}
         </Navbar.Brand>

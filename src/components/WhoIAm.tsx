@@ -45,7 +45,7 @@ const WhoIAm = () => {
       <div className={`col-lg-5 pt-lg-5 `}> 
       {isVisible ? ( //This will be rendered only when the user is on the Who I am section.
       <>
-        <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
+        <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
               As a technology enthusiast, I have always been fascinated by the endless
               possibilities of the tech industry. From the early days of my childhood,
               I spent countless hours tinkering with computers and software, eager to
@@ -55,7 +55,7 @@ const WhoIAm = () => {
               intelligence to virtual reality.
         </p>
 
-        <p className="paragraph text-darkGray who-spacing d-flex align-items-center">
+        <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
           <Typewriter //Typing effect of the second paragraph
             words={[
               `Driven by my love of technology and a desire to excel in my career, I

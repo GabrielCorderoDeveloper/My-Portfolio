@@ -39,7 +39,7 @@
     color: var(--main-color) !important;
     text-decoration: underline;
     -webkit-text-stroke: 0.5px var(--main-color);
-    text-shadow: 1px 0 3px var(--dark-blue);
+    text-shadow: -2px 0 2px var(--dark-blue);
     transition: 0.3s;
   }
   footer .center {
