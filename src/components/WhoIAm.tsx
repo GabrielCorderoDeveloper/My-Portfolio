@@ -15,7 +15,7 @@ const WhoIAm = () => {
 
           setTimeout(() => {
             setIsSign(true);
-          }, 9_500)
+          }, 10_000)
         }
       });
     });
