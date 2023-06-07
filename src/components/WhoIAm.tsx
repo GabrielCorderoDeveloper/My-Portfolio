@@ -76,7 +76,7 @@ const WhoIAm = () => {
           />
         </p>
         
-        <span className='typing-text p-0'>
+        <span className='typing-text who-spacing paragraph'>
         {isSign ? (
           <Typewriter //Typing effect of my sign
           words={[
