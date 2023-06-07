@@ -29,7 +29,7 @@ const MainText = () => {
             />
           </span>
           <Cursor/>
-           {' '} for your team.{spaces}
+           {' '}for your team.{spaces}
           </p>
         </div>
         <button
