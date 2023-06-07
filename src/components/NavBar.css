@@ -33,7 +33,7 @@
     padding: 2px 8px 0px 8px;
     border-radius: 0px 0px 20px 20px;
 }
-.nav-bar button:hover {
+.nav-bar button:hover, .nav-bar a:hover {
     color: var(--main-color) !important;
     text-decoration: underline;
     -webkit-text-stroke: 0.5px var(--main-color);
