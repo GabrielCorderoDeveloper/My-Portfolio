@@ -4,6 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const WhoIAm = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isSign, setIsSign] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => { // When the user is on the Who I Am section an animation will be activated
@@ -11,6 +12,10 @@ const WhoIAm = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
+
+          setTimeout(() => {
+            setIsSign(true);
+          }, 9_500)
         }
       });
     });
@@ -42,7 +47,7 @@ const WhoIAm = () => {
         ></iframe>
       </div>
 
-      <div className={`col-lg-5 pt-lg-5 `}> 
+      <div className={`col-lg-5 pt-xl-5 `}> 
       {isVisible ? ( //This will be rendered only when the user is on the Who I am section.
       <>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
@@ -70,6 +75,19 @@ const WhoIAm = () => {
             deleteSpeed={999999999}
           />
         </p>
+        
+        <span className='typing-text p-0'>
+        {isSign ? (
+          <Typewriter //Typing effect of my sign
+          words={[
+            `Gabriel Cordero.`,
+          ]}
+          typeSpeed={100}
+          deleteSpeed={999999999}
+        />
+        ) : ''}
+        </span>
+        
       </> ) : ''}
 
       </div>

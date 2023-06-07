@@ -12,8 +12,12 @@ div .who-t-spacing {
 }
 .who-spacing.paragraph {
   padding-left: 0;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 } 
+.sign-spacing {
+  padding: 0 8%;
+  transform: translateY(-30px);
+}
 .responsive-iframe {
   width: 46vw;
   height: calc(15vw * 1.73); /*1? The size of the youtube video will change and adapt depending on the screen width*/
