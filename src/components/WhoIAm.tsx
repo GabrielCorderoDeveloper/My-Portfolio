@@ -64,11 +64,11 @@ const WhoIAm = () => {
           <Typewriter //Typing effect of the second paragraph
             words={[
               `Driven by my love of technology and a desire to excel in my career, I
-              have dedicated myself to becoming a top-tier Front End developer. From
+              have dedicated myself to becoming a top-tier Software developer. From
               staying up-to-date with the latest technologies to actively seeking out
               opportunities for growth and development, I am committed to excellence
-              in every aspect of my journey. By choosing me as your Front
-              End developer, you can rest assured that you are getting someone who
+              in every aspect of my journey. By choosing me as your Prompt Engineer
+              , you can rest assured that you are getting someone who
               will go above and beyond to deliver outstanding results.`,
             ]}
             typeSpeed={15}

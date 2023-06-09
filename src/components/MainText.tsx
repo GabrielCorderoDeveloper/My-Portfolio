@@ -20,8 +20,7 @@ const MainText = () => {
             is <b className="roboto">Gabriel</b>
           </p>
           <p className="paragraph text-darkGray">
-          Hello, I'm Gabriel Cordero, a bilingual self-taught Front-End developer fluent in both English and Spanish. I believe my unique journey and diverse background make me
-          <span className='typing-text'>
+          Hello, I'm Gabriel Cordero, a Pormpt Engenieer with Front-End development skills. Fluent in both English and Spanish. I believe my unique journey and diverse background make me          <span className='typing-text'>
             <Typewriter //Typing effect
               words={[' an exceptional candidate ', ' the perfect candidate ']}
               loop={true}
