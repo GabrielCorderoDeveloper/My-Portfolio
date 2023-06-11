@@ -8,8 +8,8 @@ const MainText = () => {
       const [showModalContact, setShowModalContact] = useState(false);
       const handleShowModalContact = () => setShowModalContact(true);
       const handleCloseModalContact = () => setShowModalContact(false);
-      //This contain 30 empty spaces to avoid line breaking with the typing effect
-      const spaces = Array(40).fill('\u00A0').join('');
+      //This contain 15 empty spaces to avoid line breaking with the typing effect
+      const spaces = Array(15).fill('\u00A0').join('');
 
   return (
     <>
@@ -22,7 +22,7 @@ const MainText = () => {
           <p className="paragraph text-darkGray">
           Hello, I'm Gabriel Cordero, a Pormpt Engenieer with Front-End development skills. Fluent in both English and Spanish. I believe my unique journey and diverse background make me          <span className='typing-text'>
             <Typewriter //Typing effect
-              words={[' an exceptional candidate ', ' the perfect candidate ']}
+              words={[' an exceptional  candidate ', ' the perfect  candidate ']}
               loop={true}
               delaySpeed={3000}
             />
