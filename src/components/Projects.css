@@ -36,6 +36,9 @@
     padding: 4px 20px 0 20px;
     margin-left: 20px;
   }
+  .project-col button svg {
+    transform: translateY(-2px);
+  }
   .project-col:hover button{
     padding: 4px 30px 0 30px;
     border-radius: 20px;
@@ -94,27 +97,6 @@
     z-index: 0;
     border-radius: 5px;
   }
-
-  /* .number-square {
-    font-size: 2.5rem; 
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 5px;
-    right: -15px;
-    transition: 0.3s;
-  } */
-
-  /* .project-card .number-square.golden {
-    background-color: gold !important;
-    font-weight: bold;
-  }
-
-  .project-card:hover .number-square {
-    background-color: var(--main-color) !important;
-    border-radius: 50% !important;
-  } */
-
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/
 @media (max-width: 820px) {
