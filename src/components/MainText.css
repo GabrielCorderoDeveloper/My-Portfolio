@@ -39,6 +39,7 @@
     border-radius: 15px;
     padding: 0px 10px;
     width: fit-content;
+    height: 250px;
 
     background-color: rgba(255, 255, 255, 0.6);
   }
@@ -74,6 +75,10 @@
     }
     .white-transparent-bg {
       padding: 0px 0px;
+    }
+
+    .white-transparent-bg {
+      height: 280px;
     }
 
 }
