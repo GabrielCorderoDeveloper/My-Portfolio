@@ -7,7 +7,7 @@
     text-decoration: none;
   }
   .project-card-container {
-    width: 100% !important;
+    width: 100vw !important;
   }
   #projects {
     overflow: hidden;
@@ -182,7 +182,7 @@
     .project-card p {
       margin-right: 0px;
       font-size: 1.6rem; /* 20px */
-      line-height: 120%;
+      line-height: 120%;    
     }
   }
   /*~ Smaller Phone variant <-----------------------------------------------------------------------*/

@@ -47,15 +47,15 @@ const Projects = () => {
       text: "Coming soon",
       image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
       alt: "Coming soon",
-      color: "rgb(203, 41, 0)",
-      gradient: "linear-gradient(rgb(167, 128, 128), rgb(99, 13, 13))",
+      color: "rgb(89, 49, 49)",
+      gradient: "linear-gradient(rgb(161, 161, 161), rgb(29, 29, 29)",
     }
   ];
 
   return (
     <div
       id="projects"
-      className="d-flex row align-content-between main-w-container"
+      className="d-flex row justify-content-center main-w-container"
     >
       <p className="col-md-12 title who-t-spacing pb-4">List of projects</p>{" "}
       {/*//1?The styling for the title belongs to WhoIAm component*/}
