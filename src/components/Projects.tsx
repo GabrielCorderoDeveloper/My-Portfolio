@@ -13,7 +13,6 @@ const Projects = () => {
       alt: "AI Personal Life Coach",
       color: "rgb(62, 129, 236)",
       gradient: "linear-gradient(rgb(2, 173, 173), rgb(8, 57, 154))",
-      button: "View"
     },
     {
       link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
@@ -23,7 +22,6 @@ const Projects = () => {
       alt: "React to-do app",
       color: "rgb(7, 213, 99)",
       gradient: "linear-gradient(rgb(153, 153, 153), rgb(63, 107, 71))",
-      button: "View"
     },
     {
       link: "https://github.com/GabrielCorderoDeveloper/My-Portfolio",
@@ -33,7 +31,6 @@ const Projects = () => {
       alt: "My Portfolio",
       color: "rgb(0, 203, 10)",
       gradient: "linear-gradient(rgb(151, 212, 86), rgb(13, 99, 18))",
-      button: "View"
     },
     {
       link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
@@ -43,7 +40,6 @@ const Projects = () => {
       alt: "Summer Clock",
       color: "rgb(203, 101, 0)",
       gradient: "linear-gradient(rgb(212, 157, 86), rgb(99, 44, 13))",
-      button: "View"
     },
     {
       link: "https://github.com/GabrielCorderoDeveloper",
@@ -76,7 +72,7 @@ const Projects = () => {
                 <div className="col-md-9 project-col pt-5">
                   <h1 className="mb-4 text-white">{index === 0 ? <AiFillStar /> : ''}{project.title}</h1>
                   <p className="pe-5 text-white">{project.text}</p>
-                  <button style={{ backgroundColor: `${project.color}` }} className="btn btn-lg text-white mt-3 mb-5">{project.button}<FiArrowUpRight /></button>
+                  <button style={{ backgroundColor: `${project.color}` }} className="btn btn-lg text-white mt-3 mb-5">{project.button ? project.button : 'View' }<FiArrowUpRight /></button>
                 </div>
 
                 <div className="col-md-3 project-col">
