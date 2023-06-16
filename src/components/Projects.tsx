@@ -31,6 +31,7 @@ const Projects = () => {
       alt: "My Portfolio",
       color: "rgb(0, 203, 10)",
       gradient: "linear-gradient(rgb(151, 212, 86), rgb(13, 99, 18))",
+      button: "Github"
     },
     {
       link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
