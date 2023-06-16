@@ -63,11 +63,12 @@
     width: 400px;
     transform: translateY(30px) translateX(-35%);
   }
-
   .project-card-container {
     padding: 0 15%;
     z-index: 1;
     height: fit-content;
+    min-height: 280px;
+    line-height: 190%;
   }
 
   .project-card > .divSquare.first{
@@ -93,7 +94,7 @@
     height: 300px;
     position: absolute;
     right: 20%;
-    top: 20%;
+    top: 15%;
     z-index: 0;
     border-radius: 5px;
   }
@@ -105,7 +106,7 @@
   }
   .project-card p {
     margin-right: 80px;
-    font-size: 1.6rem; /* 20px */
+    font-size: 1.6rem; /* 16px */
   }
   .divSquare.second {
     right: 8%;
@@ -126,10 +127,6 @@
   div > .project-img {
     width: 200px;
     height: 300px;
-    border-radius: 5px;
-    object-fit: cover;
-    transition: 0.3s;
-    /* transform: translateY(30px) translateX(180px); */
     position: absolute;
     top: 0;
     right: 0;
@@ -144,7 +141,6 @@
     div > .project-img {
       width: 150px;
       height: 250px;
-      /* transform: translateY(30px) translateX(180px); */
       position: absolute;
       top: 0;
       right: -3%;
@@ -159,11 +155,11 @@
       top: -10%;
     }
     .project-card > .divSquare.third {
-      top: 25%;
+      top: 12%;
     }
     .project-card p {
       margin-right: 0px;
-      font-size: 1.6rem; /* 20px */
+      font-size: 1.6rem; /* 16px */
       line-height: 120%;    
     }
   }
@@ -172,7 +168,6 @@
     div > .project-img {
       width: 200px;
       height: 250px;
-      /* transform: translateY(30px) translateX(180px); */
       position: relative;
       top: -20%;
       right: -50%;
@@ -182,15 +177,14 @@
     }
     .project-card p {
       margin-right: 0px;
-      font-size: 1.6rem; /* 20px */
+      font-size: 1.6rem; /* 16px */
       line-height: 100%;
     }
     .divSquare.second {
       width: 200px;
       height: 250px;
-      /* transform: translateY(30px) translateX(180px); */
       position: absolute;
-      top: 65%;
+      top: 60%;
       right: 14%;
     }
     .project-card > .divSquare.third {
@@ -199,11 +193,8 @@
     .project-card > .divSquare.first{
       width: 100px;
       height: 90px;
-      position: absolute;
       left: 10%;
       top: -6%;
-      z-index: 0;
-      border-radius: 5px;
     }
 
     .project-card:hover .project-img {
