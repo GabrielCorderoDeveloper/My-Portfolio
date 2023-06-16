@@ -8,6 +8,7 @@ import SocialMedia from './components/SocialMedia';
 import Tags from './components/Tags';
 import WhoIAm from './components/WhoIAm';
 import ImgSlider from './components/ImgSlider';
+import Designs from './components/Designs';
 
 function App() {
 
@@ -39,6 +40,11 @@ function App() {
       {/*//1? Projects section*/}
       <section>
         <Projects/>
+      </section>
+
+      {/*//1? Designs section*/}
+      <section>
+        <Designs/>
       </section>
 
       {/*//1? Footer*/}
