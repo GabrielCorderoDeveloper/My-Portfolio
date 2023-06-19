@@ -64,7 +64,7 @@ const Projects = () => {
       {/*//1! Projects card*/}
       <div className="project-container d-flex justify-content-center flex-wrap row">
        {data.map((project, index) => (
-          <a href={project.link} target="_blank" rel="noopener noreferrer" key={index} className='mt-5 mb-5'>
+          <a href={project.link} target="_blank" rel="noopener noreferrer" key={index} className='mt-5 mb-5 project-a'>
             <div className="project-card">
               <div className="divSquare first right-back-animation" style={{ backgroundColor: `${project.color}` }}></div>
               <div className="divSquare third right-back-animation2" style={{ backgroundColor: `${project.color}` }}></div>
