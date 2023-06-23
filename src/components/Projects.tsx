@@ -36,7 +36,7 @@ const Projects = () => {
     {
       link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
       title: "Summer Clock",
-      text: "Designed to display time while providing an immersive experience through dynamic and changing backgrounds. The project offers a visually appealing and engaging way to keep track of time.",
+      text: "Designed to display current time and local weather while providing an immersive experience through dynamic and changing backgrounds. The project offers a visually appealing and engaging way to keep track of time.",
       image: "./assets/summer-clock.png",
       alt: "Summer Clock",
       color: "rgb(203, 101, 0)",
