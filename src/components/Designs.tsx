@@ -6,8 +6,14 @@ const Designs = () => {
     {
       link: "https://www.figma.com/file/IrDQzLAK2ISdbWRbZchXsP/AI-Personal-life-coach?type=design&node-id=0-1&t=fEPzCOFK4V0RmL6H-0",
       text: "AI Personal Life Coach",
-      image: "./assets/AI-coach.png",
+      image: "./assets/coach-design.png",
       alt: "AI Personal Life Coach"
+    },
+    {
+      link: "https://www.figma.com/file/D6Vn2XxJnVNWPLr0QtY5sB/AI-Shopping-List?type=design&node-id=0%3A1&mode=design&t=Y1inG55jTNdXIvH9-1",
+      text: "AI Shopping List",
+      image: "./assets/list-design.png",
+      alt: "AI Shopping List"
     },
     // {
     //   link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
@@ -27,12 +33,6 @@ const Designs = () => {
     //   image: "./assets/summer-clock.png",
     //   alt: "Summer Clock"
     // },
-    {
-      link: "https://github.com/GabrielCorderoDeveloper",
-      text: "Coming soon",
-      image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
-      alt: "Coming soon"
-    }
   ];
 
   return (
@@ -48,12 +48,11 @@ const Designs = () => {
           <div
             key={index}
             className="design-card col-xl-4 col-md-6 p-4 pb-0"
-            style={{ marginTop: `${(index + 1) * 15}px` }}
           >
             <div className="m-auto">
               <a href={design.link} target='about_blank'>
                 <img className="design-img" src={design.image} alt={design.alt} />
-                <div className={`number-square d-flex align-items-center justify-content-center ${index === 0 ? 'golden' : 'bg-lightBlack'} text-clearWhite rounded-4 pt-2`}>
+                <div className={`number-square d-flex align-items-center justify-content-center ${index < 2 ? 'golden' : 'bg-lightBlack'} text-clearWhite rounded-4 pt-2`}>
                   {index + 1}
                 </div>
               </a>

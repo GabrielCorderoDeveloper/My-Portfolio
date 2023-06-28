@@ -15,23 +15,13 @@ const Projects = () => {
       gradient: "linear-gradient(rgb(2, 173, 173), rgb(8, 57, 154))",
     },
     {
-      link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
-      title: "React to-do app",
-      text: "Web-based task management application, utilizing local storage for seamless data persistence. This innovative solution empowers users to effortlessly organize and access their tasks across multiple sessions, enhancing productivity and efficiency.",
-      image: "./assets/to-do.png",
-      alt: "React to-do app",
-      color: "rgb(7, 213, 99)",
-      gradient: "linear-gradient(rgb(153, 153, 153), rgb(63, 107, 71))",
-    },
-    {
-      link: "https://github.com/GabrielCorderoDeveloper/My-Portfolio",
-      title: "My Portfolio",
-      text: "Used UX / UI principles to make the application aesthetically pleasing and easy to use. Implemented axios and Google ReCAPTCHA on the contact form to ensure a secure and spam-free communication channel.",
-      image: "./assets/portfolio.png",
-      alt: "My Portfolio",
-      color: "rgb(0, 203, 10)",
-      gradient: "linear-gradient(rgb(151, 212, 86), rgb(13, 99, 18))",
-      button: "Github"
+      link: "https://ailistgenerator.com/",
+      title: "AI Shopping List",
+      text: "AI Shopping List has the capability to help you in your day-to-day life by facilitating the process of shopping by breaking down all the ingredients needed to make any food you want. It also helps with the process of cooking by providing a detailed step-by-step recipe that is easy to follow and execute.",
+      image: "./assets/AI-list.png",
+      alt: "AI Shopping List",
+      color: "rgb(255, 134, 21)",
+      gradient: "linear-gradient(rgb(152, 96, 32), rgb(233, 89, 60))",
     },
     {
       link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
@@ -43,15 +33,25 @@ const Projects = () => {
       gradient: "linear-gradient(rgb(212, 157, 86), rgb(99, 44, 13))",
     },
     {
-      link: "https://github.com/GabrielCorderoDeveloper",
-      title: "Coming soon",
-      text: "Coming soon",
-      image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
-      alt: "Coming soon",
-      color: "rgb(89, 49, 49)",
-      gradient: "linear-gradient(rgb(161, 161, 161), rgb(29, 29, 29)",
-      button: "Soon"
-    }
+      link: "https://github.com/GabrielCorderoDeveloper/My-Portfolio",
+      title: "My Portfolio",
+      text: "Used UX / UI principles to make the application aesthetically pleasing and easy to use. Implemented axios and Google ReCAPTCHA on the contact form to ensure a secure and spam-free communication channel.",
+      image: "./assets/portfolio.png",
+      alt: "My Portfolio",
+      color: "rgb(0, 203, 10)",
+      gradient: "linear-gradient(rgb(151, 212, 86), rgb(13, 99, 18))",
+      button: "Github"
+    },
+    // {
+    //   link: "https://github.com/GabrielCorderoDeveloper",
+    //   title: "Coming soon",
+    //   text: "Coming soon",
+    //   image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
+    //   alt: "Coming soon",
+    //   color: "rgb(89, 49, 49)",
+    //   gradient: "linear-gradient(rgb(161, 161, 161), rgb(29, 29, 29)",
+    //   button: "Soon"
+    // }
   ];
 
   return (
@@ -71,7 +71,7 @@ const Projects = () => {
 
               <div className="project-card-container row mt-5 mb-5" style={{ background: `${project.gradient}` }}>
                 <div className="col-md-9 project-col pt-5">
-                  <h1 className="mb-4 text-white">{index === 0 ? <AiFillStar /> : ''}{project.title}</h1>
+                  <h1 className="mb-4 text-white">{index < 2 ? <AiFillStar /> : ''}{project.title}</h1>
                   <p className="pe-5 text-white">{project.text}</p>
                   <button style={{ backgroundColor: `${project.color}` }} className="btn btn-lg text-white mt-3 mb-5">{project.button ? project.button : 'View' }<FiArrowUpRight /></button>
                 </div>
