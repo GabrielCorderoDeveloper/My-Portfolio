@@ -16,8 +16,8 @@ const Tags = () => {
       <div className="tag text-clearWhite bg-mainColor">Jest</div>
       <div className="tag text-clearWhite bg-lightBlack">Vitest</div>
       <div className="tag text-clearWhite bg-mainColor">UX/UI</div>
-      <div className="tag text-lightBlack bg-lightGray">Bilingual</div>
       <div className="tag text-lightBlack bg-secondaryColor">SASS</div>
+      <div className="tag text-lightBlack bg-lightGray">Bilingual</div>
     </div>
   )
 }

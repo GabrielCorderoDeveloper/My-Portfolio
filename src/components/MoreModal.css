@@ -24,3 +24,11 @@ div.modal-body > p {
   line-height: 100%;
   margin-top: 30px;
 }
+div.modal-body a {
+  font-weight: bold;
+  color: var(--dark-blue);
+  transition: 0.2s;
+}
+div.modal-body a:hover {
+  color: var(--main-color);
+}

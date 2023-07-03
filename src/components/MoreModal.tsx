@@ -19,7 +19,6 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
           beginning the development, I start with the design phase using Figma
           to create a visual representation of the project{" "}
           <a
-            className="text-mainColor font-weight-bold"
             href="https://www.figma.com/proto/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?node-id=2-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3"
             target="_blank"
           >
@@ -29,7 +28,6 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
             &nbsp; &nbsp;
 
           <a
-            className="text-mainColor font-weight-bold"
             href="https://www.figma.com/file/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?type=design&t=7Mf0xUXNaGIR1ddA-1"
             target="_blank"
           >
@@ -39,12 +37,17 @@ const MoreModal = ({ showModal, handleCloseModal }: Props) => {
           project was built using the following technologies:
         </p>
         <ul>
-          <li>Vite</li>
-          <li>React</li>
-          <li>Bootstrap 5</li>
-          <li>Typescript</li>
-          <li>HTML</li>
-          <li>CSS</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Typescript</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+        <li>React Icons</li>
+        <li>Axios</li>
+        <li>Google ReCAPTCHA</li>
+        <li>Vite</li>
+        <li>React Simple Typewriter</li>
+        <li>SASS</li>
         </ul>
         <p>
           To streamline the development process, I utilized a Vite and removed

@@ -37,6 +37,7 @@ const Footer = () => {
                 <li>Google ReCAPTCHA</li>
                 <li>Vite</li>
                 <li>React Simple Typewriter</li>
+                <li>SASS</li>
             </p>
 
             <div className="col-md-4 row-spacing row-text">
