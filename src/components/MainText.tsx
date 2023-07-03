@@ -35,7 +35,7 @@ const MainText = () => {
           className="bg-mainColor button text-clearWhite"
           onClick={handleShowModalContact}
         >
-          Hire me
+          Contact me
         </button>
       </div>
       <ContactMe

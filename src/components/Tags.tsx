@@ -3,21 +3,20 @@ import './Tags.css';
 const Tags = () => {
   return (
     <div className="d-flex flex-wrap col-lg-4 col-md-8 tag-container left-animation ">
-      <div className="tag text-clearWhite bg-mainColor">Prompt Engineering</div>
-      <div className="tag text-lightBlack bg-secondaryColor">HTML5</div>
-      <div className="tag text-clearWhite bg-mainColor">CSS3</div>
-      <div className="tag text-clearWhite bg-lightBlack">JavaScript</div>
-      <div className="tag text-clearWhite bg-darkBlue">TypeScript</div>
-      <div className="tag text-clearWhite bg-lightBlack">Bootstrap</div>
-      <div className="tag text-lightBlack bg-lightGray">React</div>
-      <div className="tag text-lightBlack bg-secondaryColor">Vite</div>
-      <div className="tag text-clearWhite bg-darkBlue">Git</div>
-      <div className="tag text-lightBlack bg-lightGray">Figma</div>
-      <div className="tag text-clearWhite bg-mainColor">Jest</div>
-      <div className="tag text-clearWhite bg-lightBlack">Vitest</div>
-      <div className="tag text-clearWhite bg-mainColor">UX/UI</div>
-      <div className="tag text-lightBlack bg-secondaryColor">SASS</div>
-      <div className="tag text-lightBlack bg-lightGray">Bilingual</div>
+      <div className="tag text-clearWhite bg-mainColor">HTML</div>
+      <div className="tag text-lightBlack bg-secondaryColor">CSS</div>
+      <div className="tag text-clearWhite bg-mainColor">JavaScript</div>
+      <div className="tag text-clearWhite bg-lightBlack">TypeScript</div>
+      <div className="tag text-clearWhite bg-darkBlue">Bootstrap</div>
+      <div className="tag text-clearWhite bg-lightBlack">React</div>
+      <div className="tag text-lightBlack bg-lightGray">Vite</div>
+      <div className="tag text-lightBlack bg-secondaryColor">Git</div>
+      <div className="tag text-clearWhite bg-darkBlue">Figma</div>
+      <div className="tag text-lightBlack bg-lightGray">Jest</div>
+      <div className="tag text-clearWhite bg-mainColor">Vitest</div>
+      <div className="tag text-clearWhite bg-lightBlack">UX/UI</div>
+      <div className="tag text-clearWhite bg-mainColor">SASS</div>
+      <div className="tag text-lightBlack bg-secondaryColor">Bilingual</div>
     </div>
   )
 }
