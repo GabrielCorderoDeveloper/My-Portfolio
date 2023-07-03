@@ -33,15 +33,6 @@
     opacity: 0;
     transition: opacity 0.6s ease-out;
   }
-/*    this happens when I hover
-
-  .slider-image-container:hover .slider-overlay {
-    opacity: 1;
-  } */
-  
-  /* .slider-image-container:hover .slider-image {
-    filter: blur(0);
-  } */
   
   .slider-button {
     position: absolute;
@@ -50,12 +41,28 @@
     background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
     font-size: 24px;
+    font-weight: bolder;
     border: none;
-    padding: 10px 15px;
+    padding: 18px 15px 10px 15px;
     cursor: pointer;
     border-radius: 20%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+    transition: 0.3s;
   }
+
+  .slider-button:hover {
+    background-color: rgba(108, 183, 119, 0.371);
+    color: rgb(162, 255, 0);
+    font-size: 30px;
+    padding: 28px 25px 20px 25px;
+    border-radius: 50%;
+  }
+  .slider-button:active {
+    background-color: rgba(189, 255, 138, 0.6);
+    color: rgb(227, 255, 134);
+    transform: translateY(-40%);
+  }
+
   
   .prev-button {
     left: 10px;

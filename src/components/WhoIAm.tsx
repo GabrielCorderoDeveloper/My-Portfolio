@@ -15,7 +15,7 @@ const WhoIAm = () => {
 
           setTimeout(() => {
             setIsSign(true);
-          }, 10_000)
+          }, 4_800)
         }
       });
     });
@@ -51,27 +51,21 @@ const WhoIAm = () => {
       {isVisible ? ( //This will be rendered only when the user is on the Who I am section.
       <>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
-              As a technology enthusiast, I have always been fascinated by the endless
-              possibilities of the tech industry. From the early days of my childhood,
-              I spent countless hours tinkering with computers and software, eager to
-              explore and learn as much as I could. This passion has only grown
-              stronger over the years, as I have witnessed firsthand the
-              transformative power of technology in our world. From artificial
-              intelligence to virtual reality.
+              Driven by my love of technology and a desire to excel in my career, I
+              have dedicated myself to becoming a top-tier Front End developer. From
+              staying up-to-date with the latest technologies to actively seeking out
+              opportunities for growth and development..
         </p>
 
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
           <Typewriter //Typing effect of the second paragraph
             words={[
-              `Driven by my love of technology and a desire to excel in my career, I
-              have dedicated myself to becoming a top-tier Front End developer. From
-              staying up-to-date with the latest technologies to actively seeking out
-              opportunities for growth and development, I am committed to excellence
+              `I am committed to excellence
               in every aspect of my journey. By choosing me as your Front End Engineer
               , you can rest assured that you are getting someone who
               will go above and beyond to deliver outstanding results.`,
             ]}
-            typeSpeed={15}
+            typeSpeed={12}
             deleteSpeed={999999999}
           />
         </p>

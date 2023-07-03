@@ -8,7 +8,7 @@ const Projects = () => {
     {
       link: "https://ailifementor.com/",
       title: "AI Personal Life Coach",
-      text: "AI Personal Life Coach© is a personal coach that will adapt itself to fit your needs. The best and fastest way to make progress towards a goal is to have someone that show us the way. A good coach gives you advices however and excellent coach will reach out to you to see how are you doing and make sure that you are in the right path.",
+      text: "AI Personal Life Coach© is a personal coach that will adapt itself to fit your needs and help you achieve any realistic goal. It is powered by the ChatGPT API. It has successfully impacted and positively influenced the lives of more than 100 users.",
       image: "./assets/AI-coach.png",
       alt: "AI Personal Life Coach",
       color: "rgb(62, 129, 236)",

@@ -54,10 +54,10 @@ const ImgSlider = () => {
         <div className="slider-overlay"></div>
       </div>
       <button className="slider-button prev-button" onClick={prevImage}>
-        &lt;
+        &lt; {/* < symbol */}
       </button>
       <button className="slider-button next-button" onClick={nextImage}>
-        &gt;
+        &gt; {/* > symbol */}
       </button>
     </div>
   );
