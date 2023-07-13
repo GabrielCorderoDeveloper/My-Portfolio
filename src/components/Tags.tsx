@@ -9,6 +9,7 @@ const Tags = () => {
       <div className="tag text-clearWhite bg-lightBlack">TypeScript</div>
       <div className="tag text-clearWhite bg-darkBlue">Bootstrap</div>
       <div className="tag text-clearWhite bg-lightBlack">React</div>
+      <div className="tag text-clearWhite bg-mainColor">NodeJS</div>
       <div className="tag text-lightBlack bg-lightGray">Vite</div>
       <div className="tag text-lightBlack bg-secondaryColor">Git</div>
       <div className="tag text-clearWhite bg-darkBlue">Figma</div>
