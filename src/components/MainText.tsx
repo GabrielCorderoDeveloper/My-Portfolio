@@ -41,7 +41,6 @@ const MainText = () => {
       <ContactMe
         showModalContact={showModalContact}
         handleCloseModalContact={handleCloseModalContact}
-        text="Hire me"
       />
     </>
   );
