@@ -71,7 +71,7 @@ const ContactMe = (props: Props) => {
       console.log(error);
       setMessage({ /*//1? Error message*/
       class: 'alert-danger',
-      text: 'Sorry, something went wrong. Please try again.'
+      text: `Sorry, something went wrong. Please try again or cantact me at`
     })
     }
   }
@@ -123,7 +123,7 @@ const ContactMe = (props: Props) => {
             {/*//!Alert---------> */}
             {message && (
               <div className={`alert ${message.class}`} role="alert">
-                {message.text}
+                {message.text} { message.class === 'alert-danger' ? <a href="mailto:gabriel.cordero.developer@gmail.com">gabriel.cordero.developer@gmail.com</a> : ''}
               </div>
             )}
             <label htmlFor="name">Name</label>
