@@ -3,6 +3,9 @@
     margin: 0 auto;
     font-size: 2rem; /* 20px */
 }
+.modal.contact a:hover{
+  color: rgb(0, 213, 237);
+}
 div.modal-header.contact {
   background-color: var(--dark-blue);
   color: var(--clear-white);
