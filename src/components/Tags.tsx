@@ -90,7 +90,7 @@ const Tags = () => {
       name: 'Bilingual'
     },
   ]);
-  const onDragEnd = (result) => {
+  const onDragEnd = (result: any) => {
     if (!result.destination) return;
 
     const updatedElements = [...elements];
