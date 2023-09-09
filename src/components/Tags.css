@@ -2,8 +2,9 @@
   .tag-container {
     margin-left: 130px;
     margin-top: 130px;
-
-    /* max-width: 620px; */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 640px;
   }
   .tag {
     min-width: 100px;
@@ -18,7 +19,7 @@
     font-size: 1.8rem; /* 18px */
     font-family: 'Roboto Serif', serif;
     font-weight: 800;
-    transition: 0.25s;
+
 
     /*1? Preventing text selection*/
     -webkit-user-select: none; /* Safari */
@@ -26,7 +27,8 @@
     user-select: none; /* Standard syntax */
   }
   .tag:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.11) rotate(3.5deg);
+    transition: 0.3s ease;
   }
 
 /*~ Tablet variant <-----------------------------------------------------------------------*/
