@@ -54,7 +54,7 @@ const WhoIAm = () => {
               Driven by my love of technology and a desire to excel in my career, I
               have dedicated myself to becoming a top-tier Front End developer. From
               staying up-to-date with the latest technologies to actively seeking out
-              opportunities for growth and development..
+              opportunities for growth and development.
         </p>
 
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
