@@ -11,7 +11,7 @@ const Tags = () => {
     },
     {
       id: 'CSS',
-      class: 'tag text-lightBlack bg-secondaryColor',
+      class: 'tag text-clearWhite bg-mainColor',
       name: 'CSS'
     },
     {
@@ -21,33 +21,58 @@ const Tags = () => {
     },
     {
       id: 'TypeScript',
-      class: 'tag text-clearWhite bg-lightBlack',
+      class: 'tag text-clearWhite bg-mainColor',
       name: 'TypeScript'
     },
     {
       id: 'Bootstrap',
-      class: 'tag text-clearWhite bg-darkBlue',
+      class: 'tag text-lightBlack bg-secondaryColor',
       name: 'Bootstrap'
     },
     {
-      id: 'React',
-      class: 'tag text-clearWhite bg-lightBlack',
-      name: 'React'
-    },
-    {
-      id: 'NodeJS',
-      class: 'tag text-lightBlack bg-lightGray',
-      name: 'NodeJS'
+      id: 'SASS',
+      class: 'tag text-lightBlack bg-secondaryColor',
+      name: 'SASS'
     },
     {
       id: 'UX/UI Design',
-      class: 'tag text-clearWhite bg-lightBlack',
+      class: 'tag text-lightBlack bg-secondaryColor',
       name: 'UX/UI Design'
     },
     {
-      id: 'SASS',
-      class: 'tag text-clearWhite bg-mainColor',
-      name: 'SASS'
+      id: 'Figma',
+      class: 'tag text-lightBlack bg-secondaryColor',
+      name: 'Figma'
+    },
+    {
+      id: 'Node JS',
+      class: 'tag text-lightBlack bg-lightGray',
+      name: 'Node JS'
+    },
+    {
+      id: 'React',
+      class: 'tag text-lightBlack bg-lightGray',
+      name: 'React'
+    },
+    {
+      id: 'Express',
+      class: 'tag text-lightBlack bg-lightGray',
+      name: 'Express'
+    },
+    {
+      id: 'MySQL/SQL',
+      class: 'tag text-lightBlack bg-lightGray',
+      name: 'MySQL/SQL'
+    },
+    {
+      id: 'Jira',
+      class: 'tag text-clearWhite bg-darkBlue',
+      name: 'Jira'
+    },
+    {
+      id: 'APIs',
+      class: 'tag text-clearWhite bg-darkBlue',
+      name: 'APIs'
     },
     {
       id: 'Vite',
@@ -56,38 +81,28 @@ const Tags = () => {
     },
     {
       id: 'Git',
-      class: 'tag text-lightBlack bg-secondaryColor',
+      class: 'tag text-clearWhite bg-darkBlue',
       name: 'Git'
     },
     {
-      id: 'Figma',
-      class: 'tag text-clearWhite bg-darkBlue',
-      name: 'Figma'
-    },
-    {
       id: 'Jest',
-      class: 'tag text-lightBlack bg-lightGray',
+      class: 'tag text-clearWhite bg-darkBlue',
       name: 'Jest'
     },
     {
-      id: 'Vitest',
-      class: 'tag text-clearWhite bg-mainColor',
-      name: 'Vitest'
+      id: 'Heroku',
+      class: 'tag text-clearWhite bg-lightBlack',
+      name: 'Heroku'
     },
     {
-      id: 'SQL',
-      class: 'tag text-clearWhite bg-darkBlue',
-      name: 'SQL'
+      id: 'Loom',
+      class: 'tag text-clearWhite bg-lightBlack',
+      name: 'Loom'
     },
     {
-      id: 'MySQL',
-      class: 'tag text-lightBlack bg-lightGray',
-      name: 'MySQL'
-    },
-    {
-      id: 'Bilingual',
-      class: 'tag text-lightBlack bg-secondaryColor',
-      name: 'Bilingual'
+      id: 'Bilingual EN/ES',
+      class: 'tag text-clearWhite bg-lightBlack',
+      name: 'Bilingual EN/ES'
     },
   ]);
   const onDragEnd = (result: any) => {
