@@ -30,9 +30,9 @@ const Tags = () => {
       name: 'Bootstrap'
     },
     {
-      id: 'SASS',
+      id: 'Sass',
       class: 'tag text-lightBlack bg-secondaryColor',
-      name: 'SASS'
+      name: 'Sass'
     },
     {
       id: 'UX/UI Design',
