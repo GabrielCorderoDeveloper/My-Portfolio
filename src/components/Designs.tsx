@@ -4,6 +4,18 @@ const Designs = () => {
 
   const data = [
     {
+      link: "https://www.figma.com/file/tRS00kCqh5nfgz47kcQux5/Sons-of-God?type=design&node-id=0%3A1&mode=design&t=4t17hWl8NsaRWlUS-1",
+      text: "Sons Of God Page",
+      image: "./assets/Sons-of-god.png",
+      alt: "AI Personal Life Coach"
+    },
+    {
+      link: "https://www.figma.com/file/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?type=design&node-id=0-1&t=nbB4AsJLif5AIy9o-0",
+      text: "My Portfolio",
+      image: "./assets/portfolio.png",
+      alt: "My Portfolio"
+    },
+    {
       link: "https://www.figma.com/file/IrDQzLAK2ISdbWRbZchXsP/AI-Personal-life-coach?type=design&node-id=0-1&t=fEPzCOFK4V0RmL6H-0",
       text: "AI Personal Life Coach",
       image: "./assets/coach-design.png",
@@ -21,12 +33,6 @@ const Designs = () => {
     //   image: "./assets/to-do.png",
     //   alt: "React to-do app"
     // },
-    {
-      link: "https://www.figma.com/file/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?type=design&node-id=0-1&t=nbB4AsJLif5AIy9o-0",
-      text: "My Portfolio",
-      image: "./assets/portfolio.png",
-      alt: "My Portfolio"
-    },
     // {
     //   link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
     //   text: "Summer Clock",
