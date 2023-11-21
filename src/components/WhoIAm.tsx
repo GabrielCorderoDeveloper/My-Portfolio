@@ -52,7 +52,7 @@ const WhoIAm = () => {
       <>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
               Driven by my love of technology and a desire to excel in my career, I
-              have dedicated myself to becoming a top-tier Front End developer. From
+              have dedicated myself to becoming a top-tier Full-stack developer. From
               staying up-to-date with the latest technologies to actively seeking out
               opportunities for growth and development.
         </p>
@@ -61,7 +61,7 @@ const WhoIAm = () => {
           <Typewriter //Typing effect of the second paragraph
             words={[
               `I am committed to excellence
-              in every aspect of my journey. By choosing me as your Front End Engineer
+              in every aspect of my journey. By choosing me as your Full-stack developer
               , you can rest assured that you are getting someone who
               will go above and beyond to deliver outstanding results.`,
             ]}

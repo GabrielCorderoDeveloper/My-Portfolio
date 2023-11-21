@@ -10,7 +10,7 @@ const images = [
 ];
 
 const ImgSlider = () => {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(3);
   const [seconds, setSeconds] = useState(0);
   const [showOverlay, setShowOverlay] = useState(false);
 

@@ -13,11 +13,11 @@ const Projects = () => {
       alt: "Sons Of God Page",
       color: "rgb(195, 128, 41)",
       gradient: "linear-gradient(rgb(192, 131, 77), rgb(255, 170, 0))",
-      button: "Soon"
+      button: "View design"
     },
     {
       link: "https://github.com/GabrielCorderoDeveloper",
-      title: "Coming soon",
+      title: "Pumpkin Develop",
       text: "Coming soon",
       image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
       alt: "Coming soon",
