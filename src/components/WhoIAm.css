@@ -27,7 +27,27 @@ div .who-t-spacing {
   font-weight: bold;
   font-size: 2.4rem;
 }
-
+.resume {
+  margin-top: 0 !important;
+}
+.resume a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  transition: 0.2s;
+}
+.resume a:hover {
+  color: rgb(78, 136, 159);
+  text-decoration: underline;
+}
+.resume a svg {
+  margin-left: 5px;
+}
+.g-image {
+  width: 25vw;
+  height: 25vw;
+  margin-left: 15%;
+  border-radius: 15px;
+}
 /*~ Tablet variant <-----------------------------------------------------------------------*/
 @media (max-width: 990px) {
   div > .who-spacing {
@@ -46,7 +66,14 @@ div .who-t-spacing {
 /*~ Phone variant <-----------------------------------------------------------------------*/
 @media (max-width: 600px) {
   div .who-t-spacing {
-    margin-top: 100px;
-    padding-left: 15%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding-left: 10%;
+  }
+  .g-image {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 10px;
+    margin-left: 20%;
   }
 }

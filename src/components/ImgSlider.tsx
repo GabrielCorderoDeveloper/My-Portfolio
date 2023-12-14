@@ -5,7 +5,6 @@ import './ImgSlider.css';
 const images = [
   "./assets/Modern_stack.png",
   "./assets/Unit_testing.png",
-  "./assets/Quick_learner.png",
   "./assets/Artistic_background.png"
 ];
 

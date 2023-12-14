@@ -11,7 +11,7 @@
   }
   #projects {
     overflow: hidden;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   .project-card > div {
     position: relative; 
@@ -183,7 +183,7 @@
       width: 200px;
       height: 250px;
       position: absolute;
-      top: 60%;
+      top: 50%;
       right: 14%;
     }
     .project-card > .divSquare.third {

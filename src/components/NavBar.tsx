@@ -35,7 +35,7 @@ const NavBar = () => {
               <Nav.Link className='text-darkGray px-1' href='#projects'>Portfolio</Nav.Link>
             </div>
             <div className='nav-item-bottom bg-clearWhite'>
-              <Nav.Link className='text-darkGray px-1' onClick={handleShowModal}>More</Nav.Link>
+              <Nav.Link className='text-darkGray px-1' target='blank' href='https://drive.google.com/file/d/18hnc70iAA6Qxrp955--pNWUBJrDW3UgC/view?usp=sharing'>Resume</Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>

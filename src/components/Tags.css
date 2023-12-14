@@ -7,8 +7,8 @@
     max-width: 640px;
   }
   .tag {
-    min-width: 100px;
-    max-height: 40px;
+    min-width: 80px;
+    max-height: 35px;
     text-align: center;
     letter-spacing: 2.5px;
     padding: 6px 20px 4px 20px;
@@ -16,15 +16,15 @@
     margin-right: 10px;
     margin-top: 10px;
 
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.6rem; /* 18px */
     font-family: 'Roboto Serif', serif;
     font-weight: 800;
-
 
     /*1? Preventing text selection*/
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+
   }
   .tag:hover {
     transform: scale(1.11) rotate(3.5deg);
@@ -38,6 +38,7 @@
     .tag-container {
         margin-left: 45px;
     }
+
 }
 
   /*~ Phone variant <-----------------------------------------------------------------------*/
@@ -46,8 +47,11 @@
         /*^ Tags*/
     .tag-container {
         margin-left: 30px;
-        margin-top: 60px;
+        margin-top: 30px;
         color: rgb(195, 128, 41);
+    }
+    .tag {
+      font-size: 1.4rem;
     }
 }
 
