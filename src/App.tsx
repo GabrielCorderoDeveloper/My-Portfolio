@@ -28,7 +28,7 @@ function App() {
 
       {/*//1? Image Slider section */}
       <section>
-        <ImgSlider/>
+        {/* <ImgSlider/> */}
       </section>
 
 

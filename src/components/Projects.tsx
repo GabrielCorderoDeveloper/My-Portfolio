@@ -1,8 +1,14 @@
 import './Projects.css';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { AiFillStar } from 'react-icons/ai';
+import PumModal from './PumModal'
+import { useState } from 'react';
 
 const Projects = () => {
+   //1! PumpkinDevelop modal
+   const [showPumModal, setShowPumModal] = useState(false);
+   const handleShowPumModal = () => setShowPumModal(true);
+   const handleClosePumModal = () => setShowPumModal(false);
 
   const data = [
     {
@@ -17,14 +23,15 @@ const Projects = () => {
       button: "View design"
     },
     {
-      link: "https://github.com/GabrielCorderoDeveloper",
+      link: "",
+      onClick: handleShowPumModal,
       title: "Pumpkin Develop",
-      text: "Coming soon",
-      image: "https://eckerd.org/wp-content/uploads/2022/01/image-coming-soon.jpg",
-      alt: "Coming soon",
-      color: "rgb(89, 49, 49)",
-      gradient: "linear-gradient(rgb(161, 161, 161), rgb(29, 29, 29)",
-      button: "Soon"
+      text: "Full-stack web application designed to connect small communities or businesses with developers, offering real industry experience for the developers while they develop a website with no development cost for the client.",
+      image: "./assets/pumpkin.png",
+      alt: "Pumpkin develop project",
+      color: "#359645",
+      gradient: "linear-gradient(#859651, #1e442a",
+      button: "See details"
     },
     {
       link: "https://ailifementor.com/",
@@ -43,11 +50,12 @@ const Projects = () => {
       className="d-flex row justify-content-center main-w-container"
     >
       <p className="col-md-12 title who-t-spacing pb-4">List of projects</p>{" "}
+      <PumModal showPumModal={showPumModal} handleClosePumModal={handleClosePumModal} />
       {/*//1?The styling for the title belongs to WhoIAm component*/}
       {/*//1! Projects card*/}
       <div className="project-container d-flex justify-content-center flex-wrap row">
        {data.map((project, index) => (
-          <a href={project.link} target="_blank" rel="noopener noreferrer" key={index} className='mt-5 mb-5 project-a'>
+          <a href={project.link ? project.link : '#p'} onClick={project.onClick && project.onClick} target={project.link ? "_blank"  : ""}  rel="noopener noreferrer" key={index} className='mt-5 mb-5 project-a'>
             <div className="project-card">
               <div className="divSquare first right-back-animation" style={{ backgroundColor: `${project.color}` }}></div>
               <div className="divSquare third right-back-animation2" style={{ backgroundColor: `${project.color}` }}></div>

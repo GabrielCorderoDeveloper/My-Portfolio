@@ -19,14 +19,11 @@ const Footer = () => {
     <footer className="bg-secondaryColor">
         {/*//1? Upper footer */}
         <div className="d-flex justify-content-between flex-wrap footer-father">
-            <div className="row col-md-4 row-spacing row-links">
-                <a className="text-darkBlue" onClick={handleShowModalContact}>Contact</a>
-                <a className="text-darkBlue" href="#whoIAm">About me</a>
-                <a className="text-darkBlue" href="#projects">Portfolio</a>
-            </div>
 
+        <a className="col-md-4 row-spacing text-center m-auto text-darkBlue" target='blank' href='https://drive.google.com/file/d/18hnc70iAA6Qxrp955--pNWUBJrDW3UgC/view?usp=sharing'>Resume</a>
+{/*
             <p className="col-md-4 row-spacing text-darkGray">
-            This portfolio is made using the following technologies and libraries:
+               This portfolio is made using the following technologies and libraries:
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Typescript</li>
@@ -37,8 +34,14 @@ const Footer = () => {
                 <li>Google ReCAPTCHA</li>
                 <li>Vite</li>
                 <li>React Simple Typewriter</li>
-                <li>SASS</li>
-            </p>
+                <li>SASS</li> 
+            </p> */}
+
+            <div className="row col-md-4 row-spacing row-links">
+                <a className="text-darkBlue" onClick={handleShowModalContact}>Contact</a>
+                <a className="text-darkBlue" href="#whoIAm">About me</a>
+                <a className="text-darkBlue" href="#projects">Portfolio</a>
+            </div>
 
             <div className="col-md-4 row-spacing row-text">
                 <p className="text-darkGray">To learn more about the steps I took to build this project and my project creation process.</p>

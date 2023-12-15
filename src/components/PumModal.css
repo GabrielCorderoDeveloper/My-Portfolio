@@ -1,0 +1,34 @@
+.modal {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem; /* 20px */
+}
+div.modal-header {
+  background-color: var(--dark-blue);
+  color: var(--clear-white);
+}
+div.modal-title {
+  font-size: 2rem; /* 20px */
+  font-weight: bold;
+}
+div.modal-body {
+  background-color: var(--clear-white);
+  color: var(--dark-blue);
+  padding: 0 30px 30px 30px;
+}
+button.btn-close{ /*Styling for the close button*/
+  background-color: var(--main-color);
+  opacity: 1;
+}
+div.modal-body > p {
+  line-height: 100%;
+  margin-top: 30px;
+}
+div.modal-body a {
+  font-weight: bold;
+  color: var(--dark-blue);
+  transition: 0.2s;
+}
+div.modal-body a:hover {
+  color: var(--main-color);
+}
