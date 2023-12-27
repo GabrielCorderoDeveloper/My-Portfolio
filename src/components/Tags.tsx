@@ -65,6 +65,11 @@ const Tags = () => {
       name: 'MySQL/SQL'
     },
     {
+      id: 'Next.js',
+      class: 'tag text-clearWhite bg-darkBlue',
+      name: 'Next.js'
+    },
+    {
       id: 'Jira',
       class: 'tag text-clearWhite bg-darkBlue',
       name: 'Jira'
@@ -90,14 +95,14 @@ const Tags = () => {
       name: 'Jest'
     },
     {
+      id: 'Python',
+      class: 'tag text-clearWhite bg-lightBlack',
+      name: 'Python'
+    },
+    {
       id: 'Heroku',
       class: 'tag text-clearWhite bg-lightBlack',
       name: 'Heroku'
-    },
-    {
-      id: 'Loom',
-      class: 'tag text-clearWhite bg-lightBlack',
-      name: 'Loom'
     },
     {
       id: 'Bilingual EN/ES',

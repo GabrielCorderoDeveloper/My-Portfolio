@@ -16,36 +16,21 @@ const Footer = () => {
     const handleCloseModalContact = () => setShowModalContact(false);
 
   return (
-    <footer className="bg-secondaryColor">
+    <footer >
         {/*//1? Upper footer */}
         <div className="d-flex justify-content-between flex-wrap footer-father">
 
-        <a className="col-md-4 row-spacing text-center m-auto text-darkBlue" target='blank' href='https://drive.google.com/file/d/18hnc70iAA6Qxrp955--pNWUBJrDW3UgC/view?usp=sharing'>Resume</a>
-{/*
-            <p className="col-md-4 row-spacing text-darkGray">
-               This portfolio is made using the following technologies and libraries:
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Typescript</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>React Icons</li>
-                <li>Axios</li>
-                <li>Google ReCAPTCHA</li>
-                <li>Vite</li>
-                <li>React Simple Typewriter</li>
-                <li>SASS</li> 
-            </p> */}
+        <a className="col-md-4 row-spacing text-center m-auto " target='blank' href='https://drive.google.com/file/d/18hnc70iAA6Qxrp955--pNWUBJrDW3UgC/view?usp=sharing'>Resume</a>
 
             <div className="row col-md-4 row-spacing row-links">
-                <a className="text-darkBlue" onClick={handleShowModalContact}>Contact</a>
-                <a className="text-darkBlue" href="#whoIAm">About me</a>
-                <a className="text-darkBlue" href="#projects">Portfolio</a>
+                <a  onClick={handleShowModalContact}>Contact</a>
+                <a  href="#whoIAm">About me</a>
+                <a  href="#projects">Portfolio</a>
             </div>
 
             <div className="col-md-4 row-spacing row-text">
-                <p className="text-darkGray">To learn more about the steps I took to build this project and my project creation process.</p>
-                <a className="text-darkBlue" onClick={handleShowModal}>Click here</a>
+                <p>To learn more about the steps I took to build this project and my project creation process.</p>
+                <a  onClick={handleShowModal}>Click here</a>
             </div>
         </div>
 
@@ -56,7 +41,7 @@ const Footer = () => {
             <p className="col-md-6">©Gabriel Cordero 2023</p>
 
             <div className="col-md-6">
-                <SocialMedia color='#1E2B32' background={false}/>
+                <SocialMedia color='#ffffff' background={false}/>
             </div>
         </div>
 

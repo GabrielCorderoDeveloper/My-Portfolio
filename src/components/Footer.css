@@ -1,5 +1,8 @@
   /*^ Footer component */
-  footer { margin-top: 180px;}
+  footer { 
+    margin-top: 180px;
+    background-color: rgb(76, 80, 89);
+  }
 
   footer .footer-father {
     margin: 0 5%;
@@ -9,9 +12,12 @@
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s;
+    color: white !important;
   }
   footer p {
     font-size: 2.2rem; /* 22px */
+    color: white !important;
   }
   footer > hr {
     width: 90%;
@@ -36,11 +42,8 @@
     margin: 50px auto;
   }
   footer a:hover {
-    color: var(--main-color) !important;
+    color: #72DF1D !important;
     text-decoration: underline;
-    -webkit-text-stroke: 0.5px var(--main-color);
-    text-shadow: -2px 0 2px var(--dark-blue);
-    transition: 0.3s;
   }
   footer .center {
     padding-right: 25%;
