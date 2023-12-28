@@ -36,7 +36,7 @@ const SocialMedia = ({ color, background }: Props) => {
       youtube: 'https://www.youtube.com/channel/UC70Va2m-AMFg7djlFzVuM9A',
       instagram: 'https://www.instagram.com/gabriel_coder47/',
       github: 'https://github.com/GabrielCorderoDeveloper',
-      linkedin: 'https://www.linkedin.com/in/gabriel-cordero-0960b9244/',
+      linkedin: 'https://www.linkedin.com/in/gabriel-ny-dev/',
     }
 
   return (
