@@ -12,7 +12,7 @@ const Projects = () => {
 
   const data = [
     {
-      link: "https://www.figma.com/file/tRS00kCqh5nfgz47kcQux5/Sons-of-God?type=design&node-id=0%3A1&mode=design&t=4t17hWl8NsaRWlUS-1",
+      link: "https://somoshijosdedios.com/",
       title: "Hijos De Dios Page",
       text: `
       Create a website for the church group Hijos De Dios (Sons Of God) that provides information about the group, features an event calendar, and offers a convenient means of communication.`,
@@ -20,7 +20,6 @@ const Projects = () => {
       alt: "Sons Of God Page",
       color: "rgb(195, 128, 41)",
       gradient: "linear-gradient(rgb(192, 131, 77), rgb(255, 170, 0))",
-      button: "View design"
     },
     {
       link: "",
