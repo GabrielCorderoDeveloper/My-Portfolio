@@ -10,6 +10,12 @@ const Designs = () => {
       alt: "AI Personal Life Coach"
     },
     {
+      link: "https://www.figma.com/file/AFqVsnoq2777CgpgjuWKCO/ANCA?type=design&node-id=0%3A1&mode=design&t=ZWC37krNVkLTVzDd-1",
+      text: "ANCA Tile Inc. Web Page",
+      image: "./assets/anca-page.png",
+      alt: "ANCA Tile Inc. Web Page"
+    },
+    {
       link: "https://www.figma.com/file/T1IsXnN31Z4yBmTxvUEBwg/My-portfolio-2023?type=design&node-id=0-1&t=nbB4AsJLif5AIy9o-0",
       text: "My Portfolio",
       image: "./assets/portfolio.png",
@@ -21,24 +27,6 @@ const Designs = () => {
       image: "./assets/coach-design.png",
       alt: "AI Personal Life Coach"
     },
-    {
-      link: "https://www.figma.com/file/D6Vn2XxJnVNWPLr0QtY5sB/AI-Shopping-List?type=design&node-id=0%3A1&mode=design&t=Y1inG55jTNdXIvH9-1",
-      text: "AI Shopping List",
-      image: "./assets/list-design.png",
-      alt: "AI Shopping List"
-    },
-    // {
-    //   link: "https://gabrielcorderodeveloper.github.io/MyTo-doList/",
-    //   text: "React to-do app",
-    //   image: "./assets/to-do.png",
-    //   alt: "React to-do app"
-    // },
-    // {
-    //   link: "https://gabrielcorderodeveloper.github.io/Summer-clock/",
-    //   text: "Summer Clock",
-    //   image: "./assets/summer-clock.png",
-    //   alt: "Summer Clock"
-    // },
   ];
 
   return (
