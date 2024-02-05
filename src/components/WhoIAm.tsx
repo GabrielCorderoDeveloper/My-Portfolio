@@ -37,14 +37,6 @@ const WhoIAm = () => {
       <p className="col-md-12 title who-t-spacing">Who I am?</p>
 
       <div className={`col-lg-6 who-spacing ${isVisible ? 'left-animation' : ''}`}>
-        {/* <iframe
-          className="responsive-iframe"
-          src="https://www.youtube.com/embed/wRwXM96wlhI"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe> */}
         <img className='g-image' src='./assets/gabriel_c.png' alt="Image of Gabriel Cordero" />
       </div>
 
@@ -52,19 +44,13 @@ const WhoIAm = () => {
       {isVisible ? ( //This will be rendered only when the user is on the Who I am section.
       <>
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
-              Driven by my love of technology and a desire to excel in my career, I
-              have dedicated myself to becoming a top-tier Full-stack developer. From
-              staying up-to-date with the latest technologies to actively seeking out
-              opportunities for growth and development.
+         I've cultivated a deep understanding of both front-end and back-end development processes. My teaching experience at BrainStation, where I served as a Software Engineer TA, provided me with invaluable insights into the nuances of web development and effective collaboration within cross-functional teams. From leading students through the intricacies of Full Stack Web Development to conducting code reviews and promoting cross-collaboration across Web Development.
         </p>
 
         <p className="paragraph text-darkGray who-spacing d-flex align-items-center caveat">
           <Typewriter //Typing effect of the second paragraph
             words={[
-              `I am committed to excellence
-              in every aspect of my journey. By choosing me as your Full-stack developer
-              , you can rest assured that you are getting someone who
-              will go above and beyond to deliver outstanding results.`,
+              `From spearheading the digital transformation of ANCA Tile Inc., to introducing dynamic translation for Hijos De Dios, my experience reflects a track record of innovation and achievement. Consistently pushing the boundaries of what's possible in software engineering. As your developer, you can trust that I will bring a unique blend of technical expertise, creativity, and dedication to every project.`,
             ]}
             typeSpeed={12}
             deleteSpeed={999999999}
@@ -103,3 +89,6 @@ const WhoIAm = () => {
 };
 
 export default WhoIAm;
+
+
+
