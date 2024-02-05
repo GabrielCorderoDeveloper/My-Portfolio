@@ -15,7 +15,10 @@ const Projects = () => {
       link: "https://somoshijosdedios.com/",
       title: "Hijos De Dios Page",
       text: `
-      Create a website for the church group Hijos De Dios (Sons Of God) that provides information about the group, features an event calendar, and offers a convenient means of communication.`,
+      Led the end-to-end design and development of a dynamic and responsive website for Hijos De Dios, used by tens of users on a regular basis.
+      Conducted user testing with more than 15 users to ensure optimal functionality, resulting in resolving any issues to deliver a polished, high-performance website.
+      Introduced dynamic English to Spanish real-time translation, expanding the website's reach by 50%.`,
+      tags: ['React','React Routing','SASS','JavaScrip','AXIOS','i18next','HTML'],
       image: "./assets/Sons-of-god.png",
       alt: "Sons Of God Page",
       color: "rgb(195, 128, 41)",
@@ -26,6 +29,7 @@ const Projects = () => {
       onClick: handleShowPumModal,
       title: "Pumpkin Develop",
       text: "Full-stack web application designed to connect small communities or businesses with developers, offering real industry experience for the developers while they develop a website with no development cost for the client.",
+      tags: ['React','React Routing','SASS','Node JS','Express','SQL','DotENV','JavaScrip','AXIOS','HTML'],
       image: "./assets/pumpkin.png",
       alt: "Pumpkin develop project",
       color: "#359645",
@@ -36,6 +40,7 @@ const Projects = () => {
       link: "https://ailifementor.com/",
       title: "AI Personal Life Coach",
       text: "AI Personal Life Coach© is a personal coach that will adapt itself to fit your needs and help you achieve any realistic goal. It is powered by the ChatGPT API. It has successfully impacted and positively influenced the lives of more than 100 users.",
+      tags: ['React','Typescript','SASS','Node JS','Express','SQL','DotENV','Vite','JavaScrip','AXIOS','HTML'],
       image: "./assets/AI-coach.png",
       alt: "AI Personal Life Coach",
       color: "rgb(62, 129, 236)",
@@ -48,7 +53,7 @@ const Projects = () => {
       id="projects"
       className="d-flex row justify-content-center main-w-container"
     >
-      <p className="col-md-12 title who-t-spacing pb-4">List of projects</p>{" "}
+      <p className="col-md-12 title who-t-spacing pb-4">My work</p>{" "}
       <PumModal showPumModal={showPumModal} handleClosePumModal={handleClosePumModal} />
       {/*//1?The styling for the title belongs to WhoIAm component*/}
       {/*//1! Projects card*/}
@@ -63,6 +68,11 @@ const Projects = () => {
                 <div className="col-md-9 project-col pt-5">
                   <h1 className="mb-4 text-white">{index < 2 ? <AiFillStar /> : ''}{project.title}</h1>
                   <p className="pe-5 text-white">{project.text}</p>
+                  <div className='project_tags'>
+                    {project.tags.map(tag => (
+                      <div className='pro_tag'>{tag}</div>
+                    ))}
+                  </div>
                   <button style={{ backgroundColor: `${project.color}` }} className="btn btn-lg text-white mt-3 mb-5">{project.button ? project.button : 'View' }<FiArrowUpRight /></button>
                 </div>
 
