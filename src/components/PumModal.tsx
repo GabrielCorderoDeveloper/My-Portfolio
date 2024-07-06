@@ -19,7 +19,7 @@ const MoreModal = ({ showPumModal, handleClosePumModal }: Props) => {
         </p>
 
         <p>
-          •Uses an SQL database to store information about users <br />
+          •Uses a database to retrieve users information<br />
           •User Authentication with JWT. <br />
           •Developer user can take aviable projects and start working on them <br />
           •Business users can modify their information, see their projects and contact the developer <br />

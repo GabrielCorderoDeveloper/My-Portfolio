@@ -29,7 +29,7 @@ const Projects = () => {
       onClick: handleShowPumModal,
       title: "Pumpkin Develop",
       text: "Full-stack web application designed to connect small communities or businesses with developers, offering real industry experience for the developers while they develop a website with no development cost for the client.",
-      tags: ['React','React Routing','SASS','Node JS','Express','SQL','DotENV','JavaScrip','AXIOS','HTML'],
+      tags: ['React','React Routing','SASS','Node JS','Express','DotENV','JavaScrip','AXIOS','HTML'],
       image: "./assets/pumpkin.png",
       alt: "Pumpkin develop project",
       color: "#359645",
